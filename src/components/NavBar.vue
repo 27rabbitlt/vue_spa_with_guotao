@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar" :class="{ 'navbar-hidden': isHidden }">
     <div class="nav-container">
-      <div class="logo">
+      <div class="logo" @click="handleLogoClick">
         <img src="@/assets/logo.svg" alt="Logo">
       </div>
       <ul class="nav-list">
@@ -37,7 +37,8 @@ const links = ref([
   { name: 'about', text: 'ABOUT', hash: '#about' },
   { name: 'offering', text: 'OFFERING', hash: '#offering' },
   { name: 'impact', text: 'IMPACT', hash: '#impact' },
-  { name: 'about', text: '关于', path: '/about' }
+  { name: 'team', text: 'TEAM', hash: '#team' },
+  { name: 'contact', text: 'CONTACT', hash: '#contact' }
 ])
 
 // 响应式状态
@@ -168,15 +169,21 @@ const handleNavigation = (link) => {
   }, 1000)
 }
 
+// 处理logo点击
+const handleLogoClick = () => {
+  navigationStore.navigate({ name: 'home', hash: '#home' })
+}
+
 // 生命周期和监听
 // 监听路由变化
 watch(() => route.path, (newPath) => {
-  if (newPath !== '/') {
-    // 切换到非首页时，设置完全不透明
-    document.documentElement.style.setProperty('--navbar-bg-alpha', '1')
-  } else {
+  if (newPath === '/') {
     // 切换到首页时，更新透明度
     updateTransparency()
+  } else {
+    // 切换到其他页面时，设置完全不透明且显示导航栏
+    document.documentElement.style.setProperty('--navbar-bg-alpha', '1')
+    isHidden.value = false
   }
   isNavigating.value = false
 })
@@ -187,14 +194,15 @@ const debouncedScrollDirection = debounce(handleScrollDirection, 100)
 
 // 组件挂载时初始化
 onMounted(() => {
-  if (route.path === '/' && window.scrollY === 0) {
+  if (route.path === '/') {
     // 首页顶部时完全透明
     document.documentElement.style.setProperty('--navbar-bg-alpha', '0')
     const firstHashLink = links.value.find(link => link.hash)
     if (firstHashLink) activeLink.value = firstHashLink
   } else {
-    // 非首页或已滚动时完全不透明
+    // 非首页时完全不透明
     document.documentElement.style.setProperty('--navbar-bg-alpha', '1')
+    isHidden.value = false
   }
 
   // 添加滚动事件监听
@@ -221,8 +229,8 @@ onUnmounted(() => {
   z-index: 1000;
   transition: transform 0.6s ease, background 0.2s linear;
   background: linear-gradient(to right,
-      rgba(16, 28, 50, var(--navbar-bg-alpha, 0)),
-      rgba(26, 66, 141, var(--navbar-bg-alpha, 0)));
+      rgba(16, 28, 50, var(--navbar-bg-alpha, 1)),
+      rgba(26, 66, 141, var(--navbar-bg-alpha, 1)));
 
   &-hidden {
     transform: translateY(-100%);
@@ -235,8 +243,17 @@ onUnmounted(() => {
   justify-content: space-between;
 }
 
-.logo img {
-  width: 50px;
+.logo {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  img {
+    width: 50px;
+  }
 }
 
 .nav-list {

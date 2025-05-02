@@ -28,7 +28,6 @@
 </template>
 
 <script setup>
-import OfferingItem from './OfferingItem.vue'
 </script>
 
 <style scoped lang="scss">

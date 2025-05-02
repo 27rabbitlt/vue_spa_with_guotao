@@ -12,9 +12,9 @@
               as well as energy-efficient household and
               income-generating appliances for lower-and middle-income households, SMEs, and farmers in peri-urban and
               rural areas.</p>
-            <button class="btn-primary">
+            <a href="https://products.mpower.africa/" class="btn-primary">
               <span>PRODUCT PORTFOLIO</span>
-            </button>
+            </a>
           </div>
           <div class="offering-items-grid">
             <OfferingItem title="GRID / OFFGRID SOLAR SYSTEM" img="src/assets/img/offering-item-solar-system.jpg" />
@@ -29,7 +29,7 @@
 </template>
 
 <script setup>
-import OfferingItem from './OfferingItem.vue'
+import OfferingItem from '@/components/OfferingItem.vue'
 </script>
 
 <style scoped lang="scss">

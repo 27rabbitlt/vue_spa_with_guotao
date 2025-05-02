@@ -38,7 +38,7 @@
 </template>
 
 <script setup>
-import OfferingItem from './OfferingItem.vue'
+import OfferingItem from '@/components/OfferingItem.vue'
 </script>
 
 <style scoped lang="scss">

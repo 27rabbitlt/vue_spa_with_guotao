@@ -30,9 +30,6 @@ a {
   transition: color 0.3s ease;
 }
 
-a:hover {
-  color: var(--secondary);
-}
 
 :root {
   --primary: #203864;
@@ -71,6 +68,7 @@ section {
 }
 
 .btn-primary {
+  text-align: center;
   margin-top: 2rem;
   padding: 1rem 2rem;
   background-color: var(--color-primary);

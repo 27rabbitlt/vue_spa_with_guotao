@@ -1,7 +1,7 @@
 // router/index.js
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home/index.vue'
-import About from '../views/About/index.vue'
+import PrivacyPolicy from '../views/PrivacyPolicy/index.vue'
 
 const routes = [
   {
@@ -10,9 +10,9 @@ const routes = [
     component: Home,
   },
   {
-    path: '/about',
-    name: 'About',
-    component: About,
+    path: '/privacy-policy',
+    name: 'PrivacyPolicy',
+    component: PrivacyPolicy,
   }
 ]
 

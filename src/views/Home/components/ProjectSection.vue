@@ -9,9 +9,10 @@
           <div class="project-content">
             <p class="text-primary text-3xl font-medium">Check out different projects implemented in all our countries
               in Africa.</p>
-            <button class="btn-primary">
+            <a href="https://cdn.prod.website-files.com/62a6db73ebc0ae41fe521319/67ced6586e3525e4c8a2f6b9_2025-FEB_Project%20references_REDUCED%20VERSION_10-03-2025.pdf"
+              class="btn-primary">
               <span>PROJECT REFERENCES</span>
-            </button>
+            </a>
           </div>
           <div class="image-container">
             <img class="rounded-3xl" src="@/assets/img/impact.jpg" alt="Impact Image">
@@ -23,7 +24,6 @@
 </template>
 
 <script setup>
-import OfferingItem from './OfferingItem.vue'
 </script>
 
 <style scoped lang="scss">
