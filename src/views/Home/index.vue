@@ -21,6 +21,13 @@ import SoftwareSection from './components/SoftwareSection.vue'
 import FinanceSection from './components/FinanceSection.vue'
 import ImpactSection from './components/ImpactSection.vue'
 import ProjectSection from './components/ProjectSection.vue'
+
+import { onMounted } from 'vue'
+onMounted(() => {
+  if (typeof WOW !== 'undefined') {
+    new WOW().init()
+  }
+})
 </script>
 
 <style scoped></style>
