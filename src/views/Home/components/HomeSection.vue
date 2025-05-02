@@ -2,7 +2,9 @@
   <section id="home" class="home-section">
     <div class="container">
       <div class="hero-headings">
-        <h1 class="pl-20 pr-20 text-white font-bold text-7xl text-shadow-md text-center">Unlocking solar power in
+        <h1 class="pl-20 pr-20 text-white font-bold text-7xl text-shadow-md text-center wow fadeInUpSmall"
+          data-wow-offset="1">
+          Unlocking solar power in
           emerging
           markets</h1>
         <h2 class="pl-20 pr-20 text-white text-3xl text-shadow-md text-center">We're building the leading platform to
@@ -64,5 +66,23 @@ const scrollToNext = () => {
     width: 40px;
     height: 40px;
   }
+}
+
+@keyframes fadeInUpSmall {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUpSmall {
+  animation-name: fadeInUpSmall;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
 }
 </style>

@@ -33,6 +33,13 @@ import TeamSection from './components/TeamSection.vue'
 import LocationSection from './components/LocationSection.vue'
 import ContactSection from './components/ContactSection.vue'
 import PartnerSection from './components/PartnerSection.vue'
+
+import { onMounted } from 'vue'
+onMounted(() => {
+  if (typeof WOW !== 'undefined') {
+    new WOW().init()
+  }
+})
 </script>
 
 <style scoped></style>
