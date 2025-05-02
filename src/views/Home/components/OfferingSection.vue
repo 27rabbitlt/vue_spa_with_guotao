@@ -12,7 +12,7 @@
               as well as energy-efficient household and
               income-generating appliances for lower-and middle-income households, SMEs, and farmers in peri-urban and
               rural areas.</p>
-            <button class="product-portfolio-btn">
+            <button class="btn-primary">
               <span>PRODUCT PORTFOLIO</span>
             </button>
           </div>
@@ -84,50 +84,5 @@ import OfferingItem from './OfferingItem.vue'
   grid-template-rows: auto;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding-top: 10px;
-}
-
-.product-portfolio-btn {
-  margin-top: 2rem;
-  padding: 1rem 2rem;
-  background-color: var(--color-primary);
-  color: white;
-  border: none;
-  border-radius: 9999px;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease;
-
-  span {
-    position: relative;
-    z-index: 1;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-  }
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 100%;
-    background-color: #294e86; // 更亮的primary颜色
-    transition: width 0.3s ease;
-  }
-
-  &:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-
-    &::before {
-      width: 100%;
-    }
-  }
-
-  &:active {
-    transform: translateY(0);
-  }
 }
 </style>

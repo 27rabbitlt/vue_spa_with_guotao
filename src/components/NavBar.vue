@@ -36,6 +36,7 @@ const links = ref([
   { name: 'home', text: 'HOME', hash: '#home' },
   { name: 'about', text: 'ABOUT', hash: '#about' },
   { name: 'offering', text: 'OFFERING', hash: '#offering' },
+  { name: 'impact', text: 'IMPACT', hash: '#impact' },
   { name: 'about', text: '关于', path: '/about' }
 ])
 

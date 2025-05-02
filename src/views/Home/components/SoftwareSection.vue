@@ -1,0 +1,111 @@
+<template>
+  <section id="software" class="software-section">
+    <div class="container">
+      <div class="software-container">
+        <div class="details-container">
+          <div class="software-details">
+            <h2 class="heading text-primary text-3xl font-bold">Software Automation</h2>
+            <div class="rich-text">
+              <p class="text-primary text-2xl font-medium leading-8">Our in-house fintech solution comprises of an
+                Android app
+                and
+                a cloud-based algorithm that tracks and digitizes all operations and leverages data to improve financial
+                inclusion of end-users.</p>
+              <ul class="list text-primary text-[1.25rem] font-medium leading-7">
+                <li>Full digitalisation of operations (orders &amp; CRM)</li>
+                <li>Automated feedback using remote monitoring</li>
+                <li>Track every unit from cradle to grave</li>
+                <li>Track customer reviews</li>
+              </ul>
+            </div>
+          </div>
+          <div class="gradient-block">
+            <h4 class="text-2xl font-bold">State-of-the-art technology</h4>
+            <p class="text-xl font-medium">Through our access to energy data and payment behaviour, we
+              provide the best products to our customers.
+            </p>
+            <h4 class="text-2xl font-bold">Full digitisation of operations</h4>
+            <p class="text-xl font-medium">All our products have a unique QR code with full traceability from
+              manufacturer to end-customer.</p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="@/assets/img/software.png" alt="Software Automation">
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script setup>
+import OfferingItem from './OfferingItem.vue'
+</script>
+
+<style scoped lang="scss">
+.software-section {
+  background-color: #ffffff;
+}
+
+.software-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 100px;
+  gap: 80px;
+}
+
+.details-container {
+  width: 640px;
+  max-width: 32vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.software-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.rich-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+
+  .list li {
+    background-image: url("src/assets/img/dot.svg");
+    background-position: 0 8.5px;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    margin-bottom: 6px;
+    padding-left: 24px;
+  }
+}
+
+.gradient-block {
+  color: white;
+  background-image: linear-gradient(226deg, #1a438e, #101c32);
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 28px;
+  display: flex;
+  gap: 8px;
+}
+
+.image-container {
+
+  img {
+    height: 70vh;
+  }
+}
+</style>
