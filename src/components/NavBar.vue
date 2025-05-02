@@ -34,8 +34,8 @@ const navigationStore = useNavigationStore()
 // 配置数据
 const links = ref([
   { name: 'home', text: 'HOME', hash: '#home' },
-  { name: 'team', text: 'TEAM', hash: '#team' },
-  { name: 'contact', text: '联系方式', hash: '#contact' },
+  { name: 'about', text: 'ABOUT', hash: '#about' },
+  { name: 'offering', text: 'OFFERING', hash: '#offering' },
   { name: 'about', text: '关于', path: '/about' }
 ])
 

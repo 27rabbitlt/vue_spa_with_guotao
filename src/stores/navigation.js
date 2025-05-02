@@ -10,23 +10,26 @@ export const useNavigationStore = defineStore('navigation', () => {
   const isProgrammaticScroll = ref(false)
 
   // 平滑滚动到指定元素
-  const smoothScrollTo = (element, duration = 1000) => {
+  const smoothScrollTo = (element, duration = 300) => {
     const start = window.scrollY
     const target = element.offsetTop
     const distance = target - start
     const startTime = performance.now()
 
-    // 缓动函数：easeInOutCubic
-    const easeInOutCubic = (t) => {
-      return t < 0.5
-        ? 4 * t * t * t
-        : 1 - Math.pow(-2 * t + 2, 3) / 2
+    // 缓动函数：快速启动的缓动
+    const quickStartEase = (t) => {
+      // 快速启动阶段
+      if (t < 0.2) {
+        return 4 * t * t // 更强的初始加速度
+      }
+      // 平滑结束阶段
+      return 1 - Math.pow(1 - t, 2) / 2
     }
 
     const animation = (currentTime) => {
       const elapsed = currentTime - startTime
       const progress = Math.min(elapsed / duration, 1)
-      const easedProgress = easeInOutCubic(progress)
+      const easedProgress = quickStartEase(progress)
 
       window.scrollTo(0, start + distance * easedProgress)
 

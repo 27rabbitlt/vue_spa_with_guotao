@@ -2,7 +2,7 @@
   <section id="home" class="home-section">
     <div class="container">
       <div class="hero-headings">
-        <h1 class="pl-20 pr-20 text-white text-7xl text-shadow-md text-center">Unlocking solar power in
+        <h1 class="pl-20 pr-20 text-white font-bold text-7xl text-shadow-md text-center">Unlocking solar power in
           emerging
           markets</h1>
         <h2 class="pl-20 pr-20 text-white text-3xl text-shadow-md text-center">We're building the leading platform to
@@ -21,7 +21,7 @@ import { useNavigationStore } from '@/stores/navigation'
 const navigationStore = useNavigationStore()
 
 const scrollToNext = () => {
-  navigationStore.navigate({ name: 'team', hash: '#team' })
+  navigationStore.navigate({ name: 'about', hash: '#about' })
 }
 </script>
 
