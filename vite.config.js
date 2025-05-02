@@ -7,7 +7,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 
 // https://vite.dev/config/
-const repoName = 'my-vue-site'
+const repoName = 'vue_spa_with_guotao'
 
 export default defineConfig({
   base: process.env.NODE_ENV === 'production' ? `/${repoName}/` : '/',

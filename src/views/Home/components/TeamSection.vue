@@ -6,16 +6,16 @@
           <h2 class="team-title text-primary text-7xl font-bold">Meet our Team</h2>
         </div>
         <div class="top-board-container">
-          <TopBoardMember avatar="@/assets/img/team/Manuel-Seiffe.png" name="Manuel Seiffe" role="Co-Founder & CEO"
+          <TopBoardMember :avatar="manuelSeiffe" name="Manuel Seiffe" role="Co-Founder & CEO"
             linkedin="https://www.linkedin.cn/incareer/in/manuelseiffe/"
             bio="Manuel is an entrepreneur and renewable energy enthusiast. After an M.A at Johns Hopkins SAIS, Manuel worked extensively in the solar sector (Yingli Solar, Q-Cells), as well as for Deutsche Bank. Together with Michael and Greg, they founded MPower in 2017. His expertise includes solar, strategy, business development and Africa." />
-          <TopBoardMember avatar="@/assets/img/team/Greg-Nau.png" name="Greg Nau" role="Co-Founder & CFO"
+          <TopBoardMember :avatar="gregNau" name="Greg Nau" role="Co-Founder & CFO"
             linkedin="https://www.linkedin.com/in/rightnau/"
             bio="Gregor is a driven business and finance expert. After pursuing an MBA at the IE Business School in Madrid, he worked as a partner at a boutique auditing and international tax advisory, before deciding to found MPower. Gregor has expertise in finance, accounting & tax, Latin America." />
-          <TopBoardMember avatar="@/assets/img/team/Michael-Eschmann.png" name="Michael Eschmann"
-            role="Co-Founder & COO" linkedin="https://www.linkedin.com/in/michael-eschmann-0a335942/"
+          <TopBoardMember :avatar="me" name="Michael Eschmann" role="Co-Founder & COO"
+            linkedin="https://www.linkedin.com/in/michael-eschmann-0a335942/"
             bio="Michael is a dedicated professional with a passion for impact investing. Also a Johns Hopkins SAIS alumni, he worked for different NGOs and international organizations (FS-UNEP, CAF, Perspectives) before joining MPower. Michael is an expert in sustainable finance, business development, fundraising and Africa." />
-          <TopBoardMember avatar="@/assets/img/team/Alejandro-Jimenez.png" name="Alejandro Jimenez" role="CTO"
+          <TopBoardMember :avatar="aj" name="Alejandro Jimenez" role="CTO"
             linkedin="https://www.linkedin.com/in/alejojimenezms/"
             bio="Alejandro is a serial entrepreneur. After completing his degree in Computer Science at the Universidad Militar Nueva Grenada (Colombia) and participating at Y Combinator, he co-founded multiple app-based or educational video games related start-ups. Alejandro is an expert in IT and Software Development." />
         </div>
@@ -66,6 +66,11 @@
 <script setup>
 import TopBoardMember from '@/components/TopBoardMember.vue'
 import TeamMember from '@/components/TeamMember.vue'
+
+import manuelSeiffe from '@/assets/img/team/Manuel-Seiffe.png'
+import gregNau from '@/assets/img/team/Greg-Nau.png'
+import me from '@/assets/img/team/Michael-Eschmann.png'
+import aj from '@/assets/img/team/Alejandro-Jimenez.png'
 </script>
 
 <style scoped lang="scss">
