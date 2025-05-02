@@ -6,56 +6,56 @@
           <h2 class="team-title text-primary text-7xl font-bold">Meet our Team</h2>
         </div>
         <div class="top-board-container">
-          <TopBoardMember avatar="src/assets/img/team/Manuel-Seiffe.png" name="Manuel Seiffe" role="Co-Founder & CEO"
+          <TopBoardMember avatar="@/assets/img/team/Manuel-Seiffe.png" name="Manuel Seiffe" role="Co-Founder & CEO"
             linkedin="https://www.linkedin.cn/incareer/in/manuelseiffe/"
             bio="Manuel is an entrepreneur and renewable energy enthusiast. After an M.A at Johns Hopkins SAIS, Manuel worked extensively in the solar sector (Yingli Solar, Q-Cells), as well as for Deutsche Bank. Together with Michael and Greg, they founded MPower in 2017. His expertise includes solar, strategy, business development and Africa." />
-          <TopBoardMember avatar="src/assets/img/team/Greg-Nau.png" name="Greg Nau" role="Co-Founder & CFO"
+          <TopBoardMember avatar="@/assets/img/team/Greg-Nau.png" name="Greg Nau" role="Co-Founder & CFO"
             linkedin="https://www.linkedin.com/in/rightnau/"
             bio="Gregor is a driven business and finance expert. After pursuing an MBA at the IE Business School in Madrid, he worked as a partner at a boutique auditing and international tax advisory, before deciding to found MPower. Gregor has expertise in finance, accounting & tax, Latin America." />
-          <TopBoardMember avatar="src/assets/img/team/Michael-Eschmann.png" name="Michael Eschmann"
+          <TopBoardMember avatar="@/assets/img/team/Michael-Eschmann.png" name="Michael Eschmann"
             role="Co-Founder & COO" linkedin="https://www.linkedin.com/in/michael-eschmann-0a335942/"
             bio="Michael is a dedicated professional with a passion for impact investing. Also a Johns Hopkins SAIS alumni, he worked for different NGOs and international organizations (FS-UNEP, CAF, Perspectives) before joining MPower. Michael is an expert in sustainable finance, business development, fundraising and Africa." />
-          <TopBoardMember avatar="src/assets/img/team/Alejandro-Jimenez.png" name="Alejandro Jimenez" role="CTO"
+          <TopBoardMember avatar="@/assets/img/team/Alejandro-Jimenez.png" name="Alejandro Jimenez" role="CTO"
             linkedin="https://www.linkedin.com/in/alejojimenezms/"
             bio="Alejandro is a serial entrepreneur. After completing his degree in Computer Science at the Universidad Militar Nueva Grenada (Colombia) and participating at Y Combinator, he co-founded multiple app-based or educational video games related start-ups. Alejandro is an expert in IT and Software Development." />
         </div>
         <div class="management-team-container">
           <h2 class="management-team-title text-primary text-4xl font-bold">Management Team</h2>
           <div class="team-members-grid">
-            <TeamMember avatar="src/assets/img/team/Caroline-Ndum.png" name="Caroline Ndum"
+            <TeamMember avatar="@/assets/img/team/Caroline-Ndum.png" name="Caroline Ndum"
               role="Finance Director, Cameroon" />
-            <TeamMember avatar="src/assets/img/team/Fiona-Vohryzka.png" name="Fiona Vohryzka"
+            <TeamMember avatar="@/assets/img/team/Fiona-Vohryzka.png" name="Fiona Vohryzka"
               role="Country Manager, Togo" />
-            <TeamMember avatar="src/assets/img/team/Flora-Camille-KEUGNE.png" name="Flora Camille KEUGNE"
+            <TeamMember avatar="@/assets/img/team/Flora-Camille-KEUGNE.png" name="Flora Camille KEUGNE"
               role="Head of HR, Cameroon" />
-            <TeamMember avatar="src/assets/img/team/James-Macho.png" name="James Macho"
+            <TeamMember avatar="@/assets/img/team/James-Macho.png" name="James Macho"
               role="Deputy Country Manager, Zambia" />
-            <TeamMember avatar="src/assets/img/team/Johannes-Hertlein.png" name="Johannes Hertlein"
+            <TeamMember avatar="@/assets/img/team/Johannes-Hertlein.png" name="Johannes Hertlein"
               role="Country Manager, Zambia" />
-            <TeamMember avatar="src/assets/img/team/Luiza-Novita.png" name="Luiza Novita"
+            <TeamMember avatar="@/assets/img/team/Luiza-Novita.png" name="Luiza Novita"
               role="Head of Marketing and Growth" />
-            <TeamMember avatar="src/assets/img/team/Paul-Nemga.png" name="Paul Nemga" role="Global Head of Sales" />
-            <TeamMember avatar="src/assets/img/team/Paulus-Fillepus.png" name="Paulus Fillepus"
+            <TeamMember avatar="@/assets/img/team/Paul-Nemga.png" name="Paul Nemga" role="Global Head of Sales" />
+            <TeamMember avatar="@/assets/img/team/Paulus-Fillepus.png" name="Paulus Fillepus"
               role="Country Manager, Namibia" />
-            <TeamMember avatar="src/assets/img/team/Ravecous-Moonga.png" name="Ravecous Moonga"
+            <TeamMember avatar="@/assets/img/team/Ravecous-Moonga.png" name="Ravecous Moonga"
               role="Head of Sales, Zambia" />
-            <TeamMember avatar="src/assets/img/team/Robert-Bitjong.png" name="Robert Bitjong"
+            <TeamMember avatar="@/assets/img/team/Robert-Bitjong.png" name="Robert Bitjong"
               role="Country Manager, Cameroon" />
-            <TeamMember avatar="src/assets/img/team/Samue-K-Boateng.png" name="Samuel K. Boateng"
+            <TeamMember avatar="@/assets/img/team/Samue-K-Boateng.png" name="Samuel K. Boateng"
               role="Country Manager, Ghana" />
-            <TeamMember avatar="src/assets/img/team/Zofe-Chow.png" name="Zofe Chow" role="Head of Sourcing, China" />
+            <TeamMember avatar="@/assets/img/team/Zofe-Chow.png" name="Zofe Chow" role="Head of Sourcing, China" />
           </div>
         </div>
         <div class="board-members-container">
           <h2 class="board-members-title text-primary text-4xl font-bold">Board of Directors</h2>
           <div class="board-members-grid">
-            <TeamMember avatar="src/assets/img/team/Renat-Heuberger.png" name="Renat Heuberger"
+            <TeamMember avatar="@/assets/img/team/Renat-Heuberger.png" name="Renat Heuberger"
               role="Chairman of the Board" />
-            <TeamMember avatar="src/assets/img/team/Christian-Jaag.png" name="Christian Jaag" role="Board member" />
-            <TeamMember avatar="src/assets/img/team/Lade-Araba.png" name="Ladé Araba" role="Board Member" />
-            <TeamMember avatar="src/assets/img/team/Patty-Karuaihe-Martin.png" name="Patty Karuaihe-Martin"
+            <TeamMember avatar="@/assets/img/team/Christian-Jaag.png" name="Christian Jaag" role="Board member" />
+            <TeamMember avatar="@/assets/img/team/Lade-Araba.png" name="Ladé Araba" role="Board Member" />
+            <TeamMember avatar="@/assets/img/team/Patty-Karuaihe-Martin.png" name="Patty Karuaihe-Martin"
               role="Board Member" />
-            <TeamMember avatar="src/assets/img/team/Zeba-Ahmad.png" name="Zeba Ahmad" role="Board member" />
+            <TeamMember avatar="@/assets/img/team/Zeba-Ahmad.png" name="Zeba Ahmad" role="Board member" />
           </div>
         </div>
       </div>

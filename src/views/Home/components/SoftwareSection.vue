@@ -81,7 +81,7 @@ import OfferingItem from '@/components/OfferingItem.vue'
   gap: 20px;
 
   .list li {
-    background-image: url("src/assets/img/dot.svg");
+    background-image: url("@/assets/img/dot.svg");
     background-position: 0 8.5px;
     background-repeat: no-repeat;
     background-size: 10px;

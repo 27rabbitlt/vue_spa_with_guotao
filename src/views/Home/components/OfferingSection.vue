@@ -17,10 +17,10 @@
             </a>
           </div>
           <div class="offering-items-grid">
-            <OfferingItem title="GRID / OFFGRID SOLAR SYSTEM" img="src/assets/img/offering-item-solar-system.jpg" />
-            <OfferingItem title="INDOOR/ouTDOOR LIGHTING" img="src/assets/img/offering-item-lighting.jpg" />
-            <OfferingItem title="Productive USE appliances" img="src/assets/img/offering-item-appliance.jpg" />
-            <OfferingItem title="E-MOBILITY" img="src/assets/img/offering-item-e-mobility.jpg" />
+            <OfferingItem title="GRID / OFFGRID SOLAR SYSTEM" img="@/assets/img/offering-item-solar-system.jpg" />
+            <OfferingItem title="INDOOR/ouTDOOR LIGHTING" img="@/assets/img/offering-item-lighting.jpg" />
+            <OfferingItem title="Productive USE appliances" img="@/assets/img/offering-item-appliance.jpg" />
+            <OfferingItem title="E-MOBILITY" img="@/assets/img/offering-item-e-mobility.jpg" />
           </div>
         </div>
       </div>
