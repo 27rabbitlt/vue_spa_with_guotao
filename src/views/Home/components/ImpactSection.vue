@@ -10,10 +10,11 @@
         </button>
       </div>
       <div class="impact-slider">
-        <div class="slider-track" :style="{ transform: `translateX(${currentPosition}px)` }">
-          <div v-for="(image, index) in images" :key="index" class="slider-item">
+        <div class="slider-track" :style="{ transform: `translateX(${currentPosition}px)` }"
+          @transitionend="handleTransitionEnd" :class="{ 'no-transition': isJumping }">
+          <div v-for="(image, index) in extendedImages" :key="index" class="slider-item">
             <div class="image-holder">
-              <img :src="image" :alt="'Impact ' + (index + 1)" class="slider-image" />
+              <img :src="image" :alt="'Impact ' + (index)" class="slider-image" />
             </div>
           </div>
         </div>
@@ -33,14 +34,16 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, nextTick } from 'vue'
 
 const currentPosition = ref(0)
 const slideWidth = 540 // 每个幻灯片的宽度
 const images = ref([])
+const extendedImages = ref([])
 let autoPlayTimer = null
 const autoPlayInterval = 3000 // 自动播放间隔，单位毫秒
-const currentIndex = ref(0)
+const currentIndex = ref(3)
+const isJumping = ref(false)
 
 // 自动读取图片
 const loadImages = async () => {
@@ -49,7 +52,18 @@ const loadImages = async () => {
     const module = await modules[path]()
     return module.default
   })
-  images.value = await Promise.all(imagePromises)
+
+  const loadedImages = await Promise.all(imagePromises)
+  images.value = loadedImages
+  extendedImages.value = [
+    loadedImages[loadedImages.length - 3], // 克隆最后一张
+    loadedImages[loadedImages.length - 2], // 克隆最后一张
+    loadedImages[loadedImages.length - 1], // 克隆最后一张
+    ...loadedImages,                      // 原始图片
+    loadedImages[0],                       // 克隆第一张
+    loadedImages[1],                       // 克隆第一张
+    loadedImages[2],                       // 克隆第一张
+  ]
 }
 
 // 更新位置
@@ -60,15 +74,39 @@ const updatePosition = () => {
 // 上一张
 const prevSlide = () => {
   resetAutoPlay()
-  currentIndex.value = (currentIndex.value - 1 + images.value.length) % images.value.length
-  updatePosition()
+  if (currentIndex.value === 3) {
+    isJumping.value = true
+    currentIndex.value = images.value.length + 3
+    updatePosition()
+    nextTick(() => {
+      document.querySelector('.slider-track').offsetHeight
+      isJumping.value = false
+      currentIndex.value -= 1
+      updatePosition()
+    })
+  } else {
+    currentIndex.value = currentIndex.value - 1
+    updatePosition()
+  }
 }
 
 // 下一张
 const nextSlide = () => {
   resetAutoPlay()
-  currentIndex.value = (currentIndex.value + 1) % images.value.length
-  updatePosition()
+  if (currentIndex.value === images.value.length + 3) {
+    isJumping.value = true
+    currentIndex.value = 3
+    updatePosition()
+    nextTick(() => {
+      document.querySelector('.slider-track').offsetHeight
+      isJumping.value = false
+      currentIndex.value += 1
+      updatePosition()
+    })
+  } else {
+    currentIndex.value += 1
+    updatePosition()
+  }
 }
 
 // 自动播放
@@ -159,6 +197,10 @@ onUnmounted(() => {
 .slider-track {
   display: flex;
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.no-transition {
+  transition: none !important;
 }
 
 .slider-item {
