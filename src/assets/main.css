@@ -1,35 +1,40 @@
-@import './base.css';
+@import "tailwindcss";
 
-#app {
-  width: 100vw;
-  /* margin: 0 auto; */
-  /* padding: 2rem; */
-  font-weight: normal;
+/* 重置样式 */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+html {
+  scroll-behavior: smooth;
 }
 
-a,
-.green {
+body {
+  font-family: 'Gill Sans Nova', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  background-color: #fff;
+}
+
+/* 链接样式 */
+a {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+  transition: color 0.3s ease;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+a:hover {
+  color: var(--secondary);
 }
 
-@media (max-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+:root {
+  --primary: #203864;
+  --secondary: #f7a01b;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+section {
+  min-height: 100vh;
+  padding: 70px 40px;
 }

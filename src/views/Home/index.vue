@@ -1,17 +1,17 @@
 <template>
   <div>
-    <HeroScroll />
-    <section id="home" ref="homeRef">
-      <HomeSection @learn-more="scrollToTeam" />
-    </section>
+    <!-- <HeroScroll /> -->
+    <!-- <section id="home" ref="homeRef"> -->
+    <HomeSection />
+    <!-- </section> -->
 
-    <section id="team" ref="teamRef">
-      <TeamSection />
-    </section>
+    <!-- <section id="team" ref="teamRef"> -->
+    <TeamSection />
+    <!-- </section> -->
 
-    <section id="contact" ref="contactRef">
-      <ContactSection />
-    </section>
+    <!-- <section id="contact" ref="contactRef"> -->
+    <ContactSection />
+    <!-- </section> -->
   </div>
 </template>
 
@@ -29,25 +29,4 @@ const contactRef = ref(null)
 
 </script>
 
-<style scoped>
-section {
-  min-height: 100vh;
-  padding: 2rem;
-  /* width: 100vw; */
-}
-
-#home {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#team {
-  background-color: #ffffff;
-}
-
-#contact {
-  background-color: #f5f7fa;
-}
-</style>
+<style scoped></style>

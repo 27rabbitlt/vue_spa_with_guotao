@@ -1,73 +1,68 @@
 <template>
   <section id="home" class="home-section">
-    <div class="hero-content">
-      <h1>{{ title }}</h1>
-      <p>{{ description }}</p>
-      <button @click="onLearnMore">了解更多</button>
+    <div class="container">
+      <div class="hero-headings">
+        <h1 class="pl-20 pr-20 text-white text-7xl text-shadow-md text-center">Unlocking solar power in
+          emerging
+          markets</h1>
+        <h2 class="pl-20 pr-20 text-white text-3xl text-shadow-md text-center">We're building the leading platform to
+          supercharge the energy transition.</h2>
+      </div>
+      <div class="arrow-down" @click="scrollToNext">
+        <img src="@/assets/img/arrow-down.svg" alt="Scroll down" class="animate-bounce cursor-pointer">
+      </div>
     </div>
   </section>
 </template>
 
 <script setup>
-import { defineProps, defineEmits } from 'vue'
+import { useNavigationStore } from '@/stores/navigation'
 
-const props = defineProps({
-  title: {
-    type: String,
-    default: '欢迎来到我们的网站'
-  },
-  description: {
-    type: String,
-    default: '我们提供专业的解决方案和服务'
-  }
-})
+const navigationStore = useNavigationStore()
 
-const emit = defineEmits(['learn-more'])
-
-const onLearnMore = () => {
-  emit('learn-more')
+const scrollToNext = () => {
+  navigationStore.navigate({ name: 'team', hash: '#team' })
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .home-section {
-  width: 100%;
+  background-image: url('@/assets/img/home-bg.jpg');
+  background-size: cover;
+  background-position: 50%;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
-.hero-content {
-  text-align: center;
+.container {
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
-  padding: 2rem;
 }
 
-.hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+.hero-headings {
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 140px;
+  padding-bottom: 100px;
 }
 
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  color: #555;
-}
+.arrow-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
 
-button {
-  padding: 0.8rem 1.5rem;
-  background-color: #42b983;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #3aa876;
+  img {
+    width: 40px;
+    height: 40px;
+  }
 }
 </style>
