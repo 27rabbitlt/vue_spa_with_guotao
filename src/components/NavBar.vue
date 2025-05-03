@@ -242,9 +242,9 @@ onUnmounted(() => {
   padding: 30px;
   z-index: 1000;
   transition: transform 0.6s ease, background 0.2s linear;
-  background: linear-gradient(to right,
-      rgba(16, 28, 50, var(--navbar-bg-alpha, 1)),
-      rgba(26, 66, 141, var(--navbar-bg-alpha, 1)));
+  background: linear-gradient(135deg, 
+      rgba(10, 10, 10, var(--navbar-bg-alpha, 1)) 70%,
+      rgba(31, 22, 12, var(--navbar-bg-alpha, 1)));
 
   &-hidden {
     transform: translateY(-100%);
@@ -266,7 +266,7 @@ onUnmounted(() => {
   }
 
   img {
-    width: 50px;
+    height: 50px;
   }
 }
 
@@ -282,11 +282,11 @@ onUnmounted(() => {
   color: #ffffff;
 
   &:hover {
-    color: var(--secondary);
+    color: var(--color-secondary);
   }
 
   &-active {
-    color: var(--secondary);
+    color: var(--color-secondary);
   }
 }
 

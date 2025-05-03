@@ -3,7 +3,7 @@
     <div class="container">
       <div class="partner-container">
         <div class="location-heading wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-          <h2 class="text-primary text-7xl font-bold">Our Partners</h2>
+          <h2 class="title text-primary text-7xl font-bold">Our Partners</h2>
         </div>
         <div class="partner-holder wow animate__animated animate__fadeInUp" data-wow-duration="1s">
           <img src="@/assets/img/partners.jpg" alt="Partners" />

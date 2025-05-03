@@ -50,7 +50,6 @@ defineProps({
 
 .member-avatar {
   width: 100%;
-  border-radius: 20px;
   overflow: hidden;
   margin-bottom: 1.5rem;
 

@@ -7,12 +7,12 @@
             <div class="dot-blue"></div>
             <div class="dot-gold"></div>
           </div>
-          <h2 class="text-primary text-8xl font-bold">Change lives using the power of solar.</h2>
+          <h2 class="title text-primary text-8xl font-bold">Change lives using the power of solar.</h2>
         </div>
         <div class="contact-row-holder">
           <div class="contact-row wow animate__animated animate__fadeInUp" data-wow-duration="1s">
             <div class="cta-row-details">
-              <h3 class="text-primary text-3xl font-bold">Corporates & Investors</h3>
+              <h3 class="title text-primary text-3xl font-bold">Corporates & Investors</h3>
               <p class="text-primary text-3xl font-medium">Interested in partnering to tackle climate problems?</p>
             </div>
 
@@ -24,7 +24,7 @@
 
           <div class="contact-row wow animate__animated animate__fadeInUp" data-wow-duration="1s">
             <div class="cta-row-details">
-              <h3 class="text-primary text-3xl font-bold">Impact Job Seekers</h3>
+              <h3 class="title text-primary text-3xl font-bold">Impact Job Seekers</h3>
               <p class="text-primary text-3xl font-medium">Looking for a role at MPower?</p>
             </div>
             <a href="https://www.linkedin.com/company/mpowerventures/jobs/?viewAsMember=true" class="btn-primary" target="_blank" rel="noopener noreferrer">
@@ -35,7 +35,7 @@
 
           <div class="contact-row wow animate__animated animate__fadeInUp" data-wow-duration="1s">
             <div class="cta-row-details">
-              <h3 class="text-primary text-3xl font-bold">Say Hi!</h3>
+              <h3 class="title text-primary text-3xl font-bold">Say Hi!</h3>
               <p class="text-primary text-3xl font-medium">We are always interested in exciting dossiers and
                 personalities.</p>
             </div>
@@ -55,7 +55,6 @@
 
 <style scoped lang="scss">
 .contact-section {
-  background-color: #fdfaf0;
   padding: 100px 0;
 }
 
@@ -115,7 +114,7 @@
     right: 0;
     bottom: 0;
     height: 1px;
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary-dark);
   }
 
   &:last-child::after {

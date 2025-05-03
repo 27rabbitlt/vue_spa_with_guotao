@@ -3,7 +3,7 @@
     <div class="container">
       <div class="location-container">
         <div class="location-heading wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-          <h2 class="text-primary text-7xl font-bold">Our Locations</h2>
+          <h2 class="title text-primary text-7xl font-bold">Our Locations</h2>
         </div>
         <a href="https://www.google.com/maps/d/u/0/edit?mid=1XMACBHUJ-ILJqxo2TDG7q5rZPAtuVCQ&usp=sharing"
           target="_blank" class="map-outer wow animate__animated animate__fadeInUp" data-wow-duration="1s">
@@ -42,7 +42,6 @@
   position: relative;
   display: block;
   width: 100%;
-  border-radius: 20px;
   overflow: hidden;
   transform-style: preserve-3d;
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);

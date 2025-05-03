@@ -7,11 +7,11 @@
         data-wow-offset="0.1"
         data-wow-duration="1s"
         >
-          <p class="text-white text-[3.25rem] font-bold text-center leading-14">We partner with local distributors,
+          <p class="title text-white text-[3.25rem] font-bold text-center leading-14">We partner with local distributors,
             corporates, and
             investors to scale projects that remove emissions and transform communities.</p>
         </div>
-        <div class="numbers-container wow animate__animated animate__fadeInUp" 
+        <div class="title numbers-container wow animate__animated animate__fadeInUp" 
         data-wow-delay="1s"
         data-wow-offset="0.1"
         data-wow-duration="1s">

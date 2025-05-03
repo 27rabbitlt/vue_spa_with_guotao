@@ -3,7 +3,7 @@
     <div class="container">
       <div class="project-container">
         <div class="project-heading wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-          <h2 class="text-primary text-7xl font-bold">Our Impact</h2>
+          <h2 class="title text-primary text-7xl font-bold">Our Impact</h2>
         </div>
         <div class="project-content-container">
           <div class="project-content wow animate__animated animate__fadeInUp" data-wow-duration="1s">
@@ -15,7 +15,7 @@
             </a>
           </div>
           <div class="image-container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-            <img class="rounded-3xl" src="@/assets/img/impact.jpg" alt="Impact Image">
+            <img src="@/assets/img/impact.jpg" alt="Impact Image">
           </div>
         </div>
       </div>

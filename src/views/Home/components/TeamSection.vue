@@ -3,7 +3,7 @@
     <div class="container">
       <div class="team-container">
         <div class="team-heading wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-          <h2 class="team-title text-primary text-7xl font-bold">Meet our Team</h2>
+          <h2 class="title team-title text-primary text-7xl font-bold">Meet our Team</h2>
         </div>
         <div class="top-board-container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
           <TopBoardMember :avatar="manuelSeiffe" name="Manuel Seiffe" role="Co-Founder & CEO"
@@ -20,7 +20,7 @@
             bio="Alejandro is a serial entrepreneur. After completing his degree in Computer Science at the Universidad Militar Nueva Grenada (Colombia) and participating at Y Combinator, he co-founded multiple app-based or educational video games related start-ups. Alejandro is an expert in IT and Software Development." />
         </div>
         <div class="management-team-container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-          <h2 class="management-team-title text-primary text-4xl font-bold">Management Team</h2>
+          <h2 class="title management-team-title text-primary text-4xl font-bold">Management Team</h2>
           <div class="team-members-grid">
             <TeamMember :avatar="carolineNdum" name="Caroline Ndum" role="Finance Director, Cameroon" />
             <TeamMember :avatar="fionaVohryzka" name="Fiona Vohryzka" role="Country Manager, Togo" />
@@ -37,7 +37,7 @@
           </div>
         </div>
         <div class="board-members-container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-          <h2 class="board-members-title text-primary text-4xl font-bold">Board of Directors</h2>
+          <h2 class="title board-members-title text-primary text-4xl font-bold">Board of Directors</h2>
           <div class="board-members-grid">
             <TeamMember :avatar="renatHeuberger" name="Renat Heuberger" role="Chairman of the Board" />
             <TeamMember :avatar="christianJaag" name="Christian Jaag" role="Board member" />

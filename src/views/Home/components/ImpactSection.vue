@@ -3,10 +3,10 @@
     <div class="slider-container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
       <div class="slider-nav-arrows">
         <button class="slider-prev" @click="prevSlide">
-          <img src="@/assets/img/arrow-left.svg" alt="Previous" />
+          <img class="arrow-icon" src="@/assets/img/arrow-left.svg" alt="Previous" />
         </button>
         <button class="slider-next" @click="nextSlide">
-          <img src="@/assets/img/arrow-right.svg" alt="Next" />
+          <img class="arrow-icon" src="@/assets/img/arrow-right.svg" alt="Next" />
         </button>
       </div>
       <div class="impact-slider">
@@ -23,15 +23,8 @@
     <div class="container">
       <div class="impact-container">
         <div class="centered-content wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-          <a href="#" class="lightbox-link" @click.prevent="openVideo">
-            <div class="animated-button-outer">
-              <div class="animated-button left-blue">
-                <div class="animated-button-flex-text">
-                  <div class="gradient-button-text flex-version">Watch video</div>
-                  <img src="@/assets/img/icon-play.svg" loading="lazy" alt="" class="video-play">
-                </div>
-              </div>
-            </div>
+          <a href="#" class="btn-primary" @click.prevent="openVideo">
+            <span>Watch video</span>
           </a>
         </div>
       </div>
@@ -243,7 +236,6 @@ onUnmounted(() => {
   width: 100%;
   height: 400px;
   overflow: hidden;
-  border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 
@@ -330,7 +322,7 @@ onUnmounted(() => {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(23, 42, 77, 0.8);
+  background-color: rgba(10, 10, 10, 0.8);
   display: flex;
   justify-content: center;
   align-items: center;

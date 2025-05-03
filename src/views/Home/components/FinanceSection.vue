@@ -3,19 +3,19 @@
     <div class="container">
       <div class="finance-container">
         <div class="gradient-block wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-          <h2 class="text-7xl font-bold">Finance that just works.</h2>
+          <h2 class="title text-primary text-7xl font-bold">Finance that just works.</h2>
           <p class="text-3xl font-medium">We offer financing solutions for both our partners and their end-users. By
             offering ease of access to our smart financing plans, we ensure nobody is left behind.</p>
         </div>
         <div class="content-container">
           <div class="content-item wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-            <h3 class="text-primary text-2xl font-bold">For B2B Partners</h3>
+            <h3 class="title text-primary text-2xl font-bold">For B2B Partners</h3>
             <p class="text-primary text-2xl font-medium">We facilitate local last-mile distribution and deployment of
               small and
               medium-scale energy infrastructure through inventory financing.</p>
           </div>
           <div class="content-item wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-            <h3 class="text-primary text-2xl font-bold">For End Consumers</h3>
+            <h3 class="title text-primary text-2xl font-bold">For End Consumers</h3>
             <p class="text-primary text-2xl font-medium">We provide financing solutions that enable qualified end
               consumers to access
               products affordably using credit. Through direct consumer financing on a lease-to-own basis.</p>

@@ -4,11 +4,11 @@
       <div class="footer-container">
         <div class="footer-logo-container">
           <a href="#" class="link-block" rel="noopener noreferrer">
-            <img src="@/assets/img/footer-logo.svg" loading="lazy" alt="MPower logo" class="footer-logo" />
+            <img src="@/assets/logo.svg" loading="lazy" alt="MPower logo" class="footer-logo" />
           </a>
         </div>
         <div class="get-in-touch-container flex">
-          <h4 class="text-gray-400 text-lg font-bold uppercase mb-4">Get in touch</h4>
+          <h4 class="text-secondary title text-gray-400 text-lg font-bold uppercase mb-4">Get in touch</h4>
           <div class="contact-address-container text-sm flex flex-col gap-4">
             <div class="contact-address-item flex flex-col">
               <span class="text-white">MPower Cameroon - Yaoundé</span>
@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="connect-container flex">
-          <h4 class="text-gray-400 text-lg font-bold uppercase mb-4">Connect</h4>
+          <h4 class="text-secondary title text-gray-400 text-lg font-bold uppercase mb-4">Connect</h4>
           <div class="social-links-container text-sm flex flex-col gap-2">
             <a href="https://www.youtube.com/@MPowerVentures" target="_blank" rel="noopener noreferrer"
               class="social-link">YouTube</a>
@@ -47,7 +47,7 @@
           </div>
         </div>
         <div class="info-container flex">
-          <h4 class="text-gray-400 text-lg font-bold uppercase mb-4">MPower Ventures AG</h4>
+          <h4 class="text-secondary title text-gray-400 text-lg font-bold uppercase mb-4">MPower Ventures AG</h4>
           <div class="address-container text-white text-sm flex flex-col gap-2">
             <span>Hohlstrasse 176</span>
             <span>8004 Zurich</span>
@@ -91,7 +91,9 @@ const scrollToTop = () => {
 
 <style scoped lang="scss">
 .inserted-footer {
-  background-image: linear-gradient(to right, #101c32, #1a438e);
+  background: linear-gradient(135deg,
+      rgba(10, 10, 10, var(--navbar-bg-alpha, 1)) 70%,
+      rgba(31, 22, 12, var(--navbar-bg-alpha, 1)));
 }
 
 .container {
@@ -112,6 +114,16 @@ const scrollToTop = () => {
     color: var(--color-white);
     cursor: pointer;
   }
+}
+
+.footer-logo-container {
+  margin-top: 50px;
+
+  .footer-logo {
+    width: 300px;
+  }
+
+
 }
 
 .flex {

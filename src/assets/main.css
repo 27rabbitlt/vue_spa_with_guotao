@@ -8,8 +8,15 @@
 } */
 
 @theme {
-  --color-primary: #203864;
-  --color-secondary: #f7a01b;
+  --color-primary: #0A0A0A;
+  --color-secondary: #b8860b;
+  --color-secondary-dark: #916e27;
+  --color-text: #333;
+  --color-light-bg: #ffffff;
+}
+
+.title {
+  font-family: 'Palatino Linotype', sans-serif;
 }
 
 html {
@@ -17,11 +24,11 @@ html {
 }
 
 body {
-  font-family: gill-sans-nova, sans-serif;
+  font-family: ​Helvetica, Arial​, sans-serif;
   font-size: 14px;
   line-height: 20px;
-  color: #333;
-  background-color: #fff;
+  color: var(--color-text);
+  background-color: var(--color-light-bg);
 }
 
 /* 链接样式 */
@@ -30,11 +37,6 @@ a {
   transition: color 0.3s ease;
 }
 
-
-:root {
-  --primary: #203864;
-  --secondary: #f7a01b;
-}
 
 section {
   min-height: 100vh;
@@ -54,29 +56,36 @@ section {
   margin-right: auto;
   position: relative;
 }
-
 .gradient-block {
-  color: white;
-  background-image: linear-gradient(226deg, #1a438e, #101c32);
-  border-radius: 15px;
+  color: var(--color-text);
+  background: transparent;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 28px;
   display: flex;
   gap: 8px;
+  border: 1px solid var(--color-secondary-dark);
+  /* border: 1px solid transparent; */
+  /* background-image: linear-gradient(white, white), 
+    linear-gradient(135deg,
+      rgba(10, 10, 10, var(--navbar-bg-alpha, 1)) 50%,
+      rgba(45, 30, 13, var(--navbar-bg-alpha, 1))); */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
+
 
 .btn-primary {
   text-align: center;
   margin-top: 2rem;
   padding: 1rem 2rem;
-  background-color: var(--color-primary);
-  color: white;
-  border: none;
-  border-radius: 9999px;
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-secondary-dark);
+  border-radius: 0;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700;
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -88,21 +97,23 @@ section {
   z-index: 1;
   letter-spacing: 0.8px;
   text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 
 .btn-primary::before {
   content: '';
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
   width: 0;
   height: 100%;
-  background-color: #294e86;
-  transition: width 0.3s ease;
+  background-color: var(--color-primary);
+  transition: width 0.5s ease;
 }
 
 .btn-primary:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--color-primary);
+  color: white;
 }
 
 .btn-primary:hover::before {
