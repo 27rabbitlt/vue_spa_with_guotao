@@ -7,19 +7,21 @@
         </div>
         <div class="offering-content-container">
           <div class="offering-content">
-            <h3 class="text-primary text-3xl font-bold wow animate__animated animate__fadeInUp" data-wow-duration="1s">Solar Products</h3>
-            <p class="text-primary text-3xl font-medium wow animate__animated animate__fadeInUp" data-wow-duration="1s">We offer a wide range of high-quality Plug & Play solar devices
-              as well as energy-efficient household and
-              income-generating appliances for lower-and middle-income households, SMEs, and farmers in peri-urban and
-              rural areas.</p>
-            <a href="https://products.mpower.africa/" class="btn-primary wow animate__animated animate__fadeInUp" data-wow-duration="1s" target="_blank" >
+            <h3 class="text-primary text-3xl font-bold wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+              Electric Products</h3>
+            <p class="text-primary text-3xl font-medium wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+              We are developing affordable electric productive use batteries and motorbikes that fit the road conditions
+              of developing countries. The centerpiece, a lithium based battery, can be removed from the bike to be
+              charged with solar panels or on the electric grid.</p>
+            <a href="https://eride.africa" class="btn-primary wow animate__animated animate__fadeInUp"
+              data-wow-duration="1s" target="_blank">
               <span>PRODUCT PORTFOLIO</span>
             </a>
           </div>
           <div class="offering-items-grid">
-            <OfferingItem title="GRID / OFFGRID SOLAR SYSTEM" :img="solarSystemImg" />
-            <OfferingItem title="INDOOR/OUTDOOR LIGHTING" :img="lightingImg" />
-            <OfferingItem title="Productive USE appliances" :img="applianceImg" />
+            <OfferingItem title="Customized Battery Management System" :img="solarSystemImg" />
+            <OfferingItem title="Container Tracker" :img="lightingImg" />
+            <OfferingItem title="Remote Monitoring & Controling" :img="applianceImg" />
             <OfferingItem title="E-MOBILITY" :img="eMobilityImg" />
           </div>
         </div>

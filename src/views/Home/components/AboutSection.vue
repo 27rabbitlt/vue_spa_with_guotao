@@ -7,15 +7,15 @@
             <div class="dot-blue"></div>
             <div class="dot-gold"></div>
           </div>
-          <h2 class="text-primary text-7xl font-bold">Supercharging the energy transition</h2>
+          <h2 class="text-primary text-4xl font-bold">Sustainability Community Innovation</h2>
           <p class="text-primary text-3xl">
-            MPower is a climate and fintech start-up that revolutionizes energy access by providing small and
-            medium-scale solar energy infrastructure in developing countries. Using a B2B model that combines hardware,
-            software, and financing solutions, we transform accessibility and impact into profitability.
+            E‑Ride Africa is on a mission to transform transport in Zambia and beyond. Our in‑house team handles every
+            step of production—battery assembly, 3D printing, CNC cutting, welding—so you get locally manufactured,
+            world‑class electric vehicles.
           </p>
         </div>
         <div class="about-image-holder wow animate__animated animate__fadeInRight" data-wow-duration="1s">
-          <img class="rounded-2xl" src="@/assets/img/women.jpg" alt="">
+          <img class="rounded-2xl" src="@/assets/img/beautiful_bike.jpeg" alt="">
         </div>
       </div>
     </div>
