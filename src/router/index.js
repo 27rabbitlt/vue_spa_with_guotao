@@ -14,18 +14,7 @@ const routes = [
     path: '/privacy-policy',
     name: 'PrivacyPolicy',
     component: PrivacyPolicy,
-  },
-  {
-    path: '/impact',
-    // redirect: '/'
-    name: 'Impact',
-    component: Home
   }
-  // {
-  //   path: '/about',
-  //   name: 'about',
-  //   component: About,
-  // },
 ]
 
 const router = createRouter({
@@ -38,19 +27,16 @@ const router = createRouter({
     if (to.hash) {
       console.log(import.meta.env.BASE_URL)
       console.log('to.hash', to.hash)
-      return new Promise((resolve) => {
-        const checkExist = () => {
-          const el = document.querySelector(to.hash)
-          if (el) {
-            console.log(el)
-            resolve({ el: to.hash, behavior: 'smooth' })
-          } else {
-            console.log('not yet')
-            setTimeout(checkExist, 100)
-          }
-        }
-        checkExist()
-      })
+      if (to.hash) {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            resolve({
+              el: to.hash,
+              behavior: 'smooth',
+            })
+          }, 300) // 延迟 300ms，等待页面内容渲染
+        })
+      }
     }
     return { top: 0 }
   }

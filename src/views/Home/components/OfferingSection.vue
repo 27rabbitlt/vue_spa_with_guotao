@@ -18,7 +18,7 @@
           </div>
           <div class="offering-items-grid">
             <OfferingItem title="GRID / OFFGRID SOLAR SYSTEM" :img="solarSystemImg" />
-            <OfferingItem title="INDOOR/ouTDOOR LIGHTING" :img="lightingImg" />
+            <OfferingItem title="INDOOR/OUTDOOR LIGHTING" :img="lightingImg" />
             <OfferingItem title="Productive USE appliances" :img="applianceImg" />
             <OfferingItem title="E-MOBILITY" :img="eMobilityImg" />
           </div>

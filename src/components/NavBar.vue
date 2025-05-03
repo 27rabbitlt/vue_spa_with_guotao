@@ -90,10 +90,11 @@ const updateActiveLink = () => {
     if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
       // if (!isNavigating.value) {
       activeLink.value = link
-      if (route.hash !== link.hash) {
-        console.log('base: ', router.options.history.base)
-        history.replaceState(null, null, router.options.history.base + '/' + link.hash)
-      }
+      // if (route.hash !== link.hash) {
+      console.log('base: ', router.options.history.base)
+      // router.replace({ hash: link.hash })
+      history.replaceState(null, null, router.options.history.base + '/' + link.hash)
+      // }
       // }
       foundActive = true
       break
