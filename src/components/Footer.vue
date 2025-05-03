@@ -12,31 +12,38 @@
           <div class="contact-address-container text-sm flex flex-col gap-4">
             <div class="contact-address-item flex flex-col">
               <span class="text-white">MPower Cameroon - Yaoundé</span>
-              <a href="mailto:hellocameroon@mpower.africa" class="text-white" target="_blank" rel="noopener noreferrer">hellocameroon@mpower.africa</a>
+              <a href="mailto:hellocameroon@mpower.africa" class="text-white" target="_blank"
+                rel="noopener noreferrer">hellocameroon@mpower.africa</a>
             </div>
             <div class="contact-address-item flex flex-col">
               <span class="text-white">MPower Ghana - Accra</span>
-              <a href="mailto:helloghana@mpower.africa" class="text-white" target="_blank" rel="noopener noreferrer">helloghana@mpower.africa</a>
+              <a href="mailto:helloghana@mpower.africa" class="text-white" target="_blank"
+                rel="noopener noreferrer">helloghana@mpower.africa</a>
             </div>
             <div class="contact-address-item flex flex-col">
               <span class="text-white">MPower Namibia - Windhoek</span>
-              <a href="mailto:hellonamibia@mpower.africa" class="text-white" target="_blank" rel="noopener noreferrer">hellonamibia@mpower.africa</a>
+              <a href="mailto:hellonamibia@mpower.africa" class="text-white" target="_blank"
+                rel="noopener noreferrer">hellonamibia@mpower.africa</a>
             </div>
             <div class="contact-address-item flex flex-col">
               <span class="text-white">MPower Togo - Lomé</span>
-              <a href="mailto:hellotogo@mpower.africa" class="text-white" target="_blank" rel="noopener noreferrer">hellotogo@mpower.africa</a>
+              <a href="mailto:hellotogo@mpower.africa" class="text-white" target="_blank"
+                rel="noopener noreferrer">hellotogo@mpower.africa</a>
             </div>
             <div class="contact-address-item flex flex-col">
               <span class="text-white">MPower Zambia - Lusaka</span>
-              <a href="mailto:hellozambia@mpower.africa" class="text-white" target="_blank" rel="noopener noreferrer">hellozambia@mpower.africa</a>
+              <a href="mailto:hellozambia@mpower.africa" class="text-white" target="_blank"
+                rel="noopener noreferrer">hellozambia@mpower.africa</a>
             </div>
           </div>
         </div>
         <div class="connect-container flex">
           <h4 class="text-gray-400 text-lg font-bold uppercase mb-4">Connect</h4>
           <div class="social-links-container text-sm flex flex-col gap-2">
-            <a href="https://www.youtube.com/@MPowerVentures" target="_blank" rel="noopener noreferrer" class="social-link">YouTube</a>
-            <a href="https://www.linkedin.com/company/mpowerventures/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+            <a href="https://www.youtube.com/@MPowerVentures" target="_blank" rel="noopener noreferrer"
+              class="social-link">YouTube</a>
+            <a href="https://www.linkedin.com/company/eride-africa/posts/?feedView=all" target="_blank"
+              rel="noopener noreferrer" class="social-link">LinkedIn</a>
           </div>
         </div>
         <div class="info-container flex">
@@ -46,7 +53,8 @@
             <span>8004 Zurich</span>
             <span>Switzerland</span>
             <span>+41 79 175 52 02</span>
-            <a href="mailto:info@mpower.africa" class="text-white" target="_blank" rel="noopener noreferrer">info@mpower.africa</a>
+            <a href="mailto:info@mpower.africa" class="text-white" target="_blank"
+              rel="noopener noreferrer">info@mpower.africa</a>
           </div>
         </div>
 
@@ -58,7 +66,8 @@
 
       <div class="footer-bottom text-gray-400">
         <span>©2025 MPower</span>
-        <router-link to="/privacy-policy" class="footer-bottom-links text-gray-400" rel="noopener noreferrer">Privacy & Terms</router-link>
+        <router-link to="/privacy-policy" class="footer-bottom-links text-gray-400" rel="noopener noreferrer">Privacy &
+          Terms</router-link>
         <span>Made by Oddyti</span>
       </div>
     </div>

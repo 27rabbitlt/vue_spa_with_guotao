@@ -5,9 +5,9 @@
         <div class="location-heading wow animate__animated animate__fadeInUp" data-wow-duration="1s">
           <h2 class="text-primary text-7xl font-bold">Our Locations</h2>
         </div>
-        <a href="https://www.google.com/maps/d/embed?mid=1DShCdKaLBhFCSE-6_DnQEojM87dI88g&ehbc=2E312F" target="_blank"
-          class="map-outer wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-          <img src="@/assets/img/map.jpg" alt="Our Locations" class="map-placeholder" />
+        <a href="https://www.google.com/maps/d/u/0/edit?mid=1XMACBHUJ-ILJqxo2TDG7q5rZPAtuVCQ&usp=sharing"
+          target="_blank" class="map-outer wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+          <img src="@/assets/img/map.jpeg" alt="Our Locations" class="map-placeholder" />
           <div class="map-overlay">
             <span class="text-white text-2xl font-normal mr-4">View on Google Maps</span>
             <img src="@/assets/img/new-window.svg" loading="lazy" alt="" class="new-window-icon" />

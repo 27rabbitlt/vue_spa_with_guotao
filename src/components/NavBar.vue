@@ -13,7 +13,7 @@
           <a href="https://www.youtube.com/@MPowerVentures" target="_blank">
             <img src="@/assets/img/youtube-icon.png" alt="youtube">
           </a>
-          <a href="https://www.linkedin.com/company/mpowerventures/" target="_blank">
+          <a href="https://www.linkedin.com/company/eride-africa/posts/?feedView=all" target="_blank">
             <img src="@/assets/img/linked-in-icon.png" alt="linkedin">
           </a>
         </div>
