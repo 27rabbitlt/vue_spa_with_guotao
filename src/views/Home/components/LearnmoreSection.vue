@@ -12,7 +12,7 @@
         </div>
 
         <a href="https://mpower.notion.site/MPower-Unlocking-solar-power-in-Africa-11a4fa25f111809ebee7e71ba35718b5"
-          class="btn-primary wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+          class="btn-primary wow animate__animated animate__fadeInUp" data-wow-duration="1s" target="_blank">
           <span>MORE INFORMATION HERE</span>
         </a>
 

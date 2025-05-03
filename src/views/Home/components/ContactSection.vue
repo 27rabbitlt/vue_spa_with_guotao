@@ -27,7 +27,7 @@
               <h3 class="text-primary text-3xl font-bold">Impact Job Seekers</h3>
               <p class="text-primary text-3xl font-medium">Looking for a role at MPower?</p>
             </div>
-            <a href="https://www.linkedin.com/company/mpowerventures/jobs/?viewAsMember=true" class="btn-primary">
+            <a href="https://www.linkedin.com/company/mpowerventures/jobs/?viewAsMember=true" class="btn-primary" target="_blank" rel="noopener noreferrer">
               <span>Open vacancies</span>
             </a>
           </div>

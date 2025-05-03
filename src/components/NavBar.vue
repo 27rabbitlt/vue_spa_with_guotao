@@ -10,10 +10,10 @@
           {{ link.text }}
         </li>
         <div class="social">
-          <a href="https://www.youtube.com/@MPowerVentures">
+          <a href="https://www.youtube.com/@MPowerVentures" target="_blank">
             <img src="@/assets/img/youtube-icon.png" alt="youtube">
           </a>
-          <a href="https://www.linkedin.com/company/mpowerventures/">
+          <a href="https://www.linkedin.com/company/mpowerventures/" target="_blank">
             <img src="@/assets/img/linked-in-icon.png" alt="linkedin">
           </a>
         </div>

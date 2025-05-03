@@ -12,7 +12,7 @@
               as well as energy-efficient household and
               income-generating appliances for lower-and middle-income households, SMEs, and farmers in peri-urban and
               rural areas.</p>
-            <a href="https://products.mpower.africa/" class="btn-primary wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+            <a href="https://products.mpower.africa/" class="btn-primary wow animate__animated animate__fadeInUp" data-wow-duration="1s" target="_blank" >
               <span>PRODUCT PORTFOLIO</span>
             </a>
           </div>
