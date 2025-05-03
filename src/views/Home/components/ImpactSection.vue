@@ -42,9 +42,9 @@
       <div class="video-modal-content" @click.stop>
         <button class="close-button" @click="closeVideo">&times;</button>
         <iframe 
-          src="https://player.vimeo.com/video/404728546?h=a5674f57c7&app_id=122963"
-          width="940" 
-          height="940" 
+          :src="videoUrl"
+          width="530" 
+          height="530" 
           frameborder="0" 
           allow="autoplay; fullscreen" 
           allowfullscreen
@@ -66,6 +66,7 @@ const autoPlayInterval = 3000 // 自动播放间隔，单位毫秒
 const currentIndex = ref(3)
 const isJumping = ref(false)
 const showVideoModal = ref(false)
+const videoUrl = ref('https://player.vimeo.com/video/404728546?h=a5674f57c7&app_id=122963')
 
 // 自动读取图片
 const loadImages = async () => {
@@ -149,11 +150,13 @@ const resetAutoPlay = () => {
 const openVideo = () => {
   showVideoModal.value = true
   document.body.style.overflow = 'hidden'
+  videoUrl.value = 'https://player.vimeo.com/video/404728546?h=a5674f57c7&app_id=122963&autoplay=1'
 }
 
 const closeVideo = () => {
   showVideoModal.value = false
   document.body.style.overflow = ''
+  videoUrl.value = 'https://player.vimeo.com/video/404728546?h=a5674f57c7&app_id=122963'
 }
 
 onMounted(() => {
@@ -359,7 +362,6 @@ onUnmounted(() => {
     color: rgba(255, 255, 255, 1);
   }
 }
-
 
 .video-modal-content iframe {
   width: 530px;
