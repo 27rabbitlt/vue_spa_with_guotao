@@ -17,10 +17,10 @@
             </a>
           </div>
           <div class="offering-items-grid">
-            <OfferingItem title="GRID / OFFGRID SOLAR SYSTEM" img="@/assets/img/offering-item-solar-system.jpg" />
-            <OfferingItem title="INDOOR/ouTDOOR LIGHTING" img="@/assets/img/offering-item-lighting.jpg" />
-            <OfferingItem title="Productive USE appliances" img="@/assets/img/offering-item-appliance.jpg" />
-            <OfferingItem title="E-MOBILITY" img="@/assets/img/offering-item-e-mobility.jpg" />
+            <OfferingItem title="GRID / OFFGRID SOLAR SYSTEM" :img="solarSystemImg" />
+            <OfferingItem title="INDOOR/ouTDOOR LIGHTING" :img="lightingImg" />
+            <OfferingItem title="Productive USE appliances" :img="applianceImg" />
+            <OfferingItem title="E-MOBILITY" :img="eMobilityImg" />
           </div>
         </div>
       </div>
@@ -30,6 +30,10 @@
 
 <script setup>
 import OfferingItem from '@/components/OfferingItem.vue'
+import solarSystemImg from '@/assets/img/offering-item-solar-system.jpg'
+import lightingImg from '@/assets/img/offering-item-lighting.jpg'
+import applianceImg from '@/assets/img/offering-item-appliance.jpg'
+import eMobilityImg from '@/assets/img/offering-item-e-mobility.jpg'
 </script>
 
 <style scoped lang="scss">

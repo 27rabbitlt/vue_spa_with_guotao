@@ -22,40 +22,28 @@
         <div class="management-team-container">
           <h2 class="management-team-title text-primary text-4xl font-bold">Management Team</h2>
           <div class="team-members-grid">
-            <TeamMember avatar="@/assets/img/team/Caroline-Ndum.png" name="Caroline Ndum"
-              role="Finance Director, Cameroon" />
-            <TeamMember avatar="@/assets/img/team/Fiona-Vohryzka.png" name="Fiona Vohryzka"
-              role="Country Manager, Togo" />
-            <TeamMember avatar="@/assets/img/team/Flora-Camille-KEUGNE.png" name="Flora Camille KEUGNE"
-              role="Head of HR, Cameroon" />
-            <TeamMember avatar="@/assets/img/team/James-Macho.png" name="James Macho"
-              role="Deputy Country Manager, Zambia" />
-            <TeamMember avatar="@/assets/img/team/Johannes-Hertlein.png" name="Johannes Hertlein"
-              role="Country Manager, Zambia" />
-            <TeamMember avatar="@/assets/img/team/Luiza-Novita.png" name="Luiza Novita"
-              role="Head of Marketing and Growth" />
-            <TeamMember avatar="@/assets/img/team/Paul-Nemga.png" name="Paul Nemga" role="Global Head of Sales" />
-            <TeamMember avatar="@/assets/img/team/Paulus-Fillepus.png" name="Paulus Fillepus"
-              role="Country Manager, Namibia" />
-            <TeamMember avatar="@/assets/img/team/Ravecous-Moonga.png" name="Ravecous Moonga"
-              role="Head of Sales, Zambia" />
-            <TeamMember avatar="@/assets/img/team/Robert-Bitjong.png" name="Robert Bitjong"
-              role="Country Manager, Cameroon" />
-            <TeamMember avatar="@/assets/img/team/Samue-K-Boateng.png" name="Samuel K. Boateng"
-              role="Country Manager, Ghana" />
-            <TeamMember avatar="@/assets/img/team/Zofe-Chow.png" name="Zofe Chow" role="Head of Sourcing, China" />
+            <TeamMember :avatar="carolineNdum" name="Caroline Ndum" role="Finance Director, Cameroon" />
+            <TeamMember :avatar="fionaVohryzka" name="Fiona Vohryzka" role="Country Manager, Togo" />
+            <TeamMember :avatar="floraCamille" name="Flora Camille KEUGNE" role="Head of HR, Cameroon" />
+            <TeamMember :avatar="jamesMacho" name="James Macho" role="Deputy Country Manager, Zambia" />
+            <TeamMember :avatar="johannesHertlein" name="Johannes Hertlein" role="Country Manager, Zambia" />
+            <TeamMember :avatar="luizaNovita" name="Luiza Novita" role="Head of Marketing and Growth" />
+            <TeamMember :avatar="paulNemga" name="Paul Nemga" role="Global Head of Sales" />
+            <TeamMember :avatar="paulusFillepus" name="Paulus Fillepus" role="Country Manager, Namibia" />
+            <TeamMember :avatar="ravecousMoonga" name="Ravecous Moonga" role="Head of Sales, Zambia" />
+            <TeamMember :avatar="robertBitjong" name="Robert Bitjong" role="Country Manager, Cameroon" />
+            <TeamMember :avatar="samuelBoateng" name="Samuel K. Boateng" role="Country Manager, Ghana" />
+            <TeamMember :avatar="zofeChow" name="Zofe Chow" role="Head of Sourcing, China" />
           </div>
         </div>
         <div class="board-members-container">
           <h2 class="board-members-title text-primary text-4xl font-bold">Board of Directors</h2>
           <div class="board-members-grid">
-            <TeamMember avatar="@/assets/img/team/Renat-Heuberger.png" name="Renat Heuberger"
-              role="Chairman of the Board" />
-            <TeamMember avatar="@/assets/img/team/Christian-Jaag.png" name="Christian Jaag" role="Board member" />
-            <TeamMember avatar="@/assets/img/team/Lade-Araba.png" name="Ladé Araba" role="Board Member" />
-            <TeamMember avatar="@/assets/img/team/Patty-Karuaihe-Martin.png" name="Patty Karuaihe-Martin"
-              role="Board Member" />
-            <TeamMember avatar="@/assets/img/team/Zeba-Ahmad.png" name="Zeba Ahmad" role="Board member" />
+            <TeamMember :avatar="renatHeuberger" name="Renat Heuberger" role="Chairman of the Board" />
+            <TeamMember :avatar="christianJaag" name="Christian Jaag" role="Board member" />
+            <TeamMember :avatar="ladeAraba" name="Ladé Araba" role="Board Member" />
+            <TeamMember :avatar="pattyKaruaihe" name="Patty Karuaihe-Martin" role="Board Member" />
+            <TeamMember :avatar="zebaAhmad" name="Zeba Ahmad" role="Board member" />
           </div>
         </div>
       </div>
@@ -67,10 +55,32 @@
 import TopBoardMember from '@/components/TopBoardMember.vue'
 import TeamMember from '@/components/TeamMember.vue'
 
+// Top Board Members
 import manuelSeiffe from '@/assets/img/team/Manuel-Seiffe.png'
 import gregNau from '@/assets/img/team/Greg-Nau.png'
 import me from '@/assets/img/team/Michael-Eschmann.png'
 import aj from '@/assets/img/team/Alejandro-Jimenez.png'
+
+// Management Team
+import carolineNdum from '@/assets/img/team/Caroline-Ndum.png'
+import fionaVohryzka from '@/assets/img/team/Fiona-Vohryzka.png'
+import floraCamille from '@/assets/img/team/Flora-Camille-KEUGNE.png'
+import jamesMacho from '@/assets/img/team/James-Macho.png'
+import johannesHertlein from '@/assets/img/team/Johannes-Hertlein.png'
+import luizaNovita from '@/assets/img/team/Luiza-Novita.png'
+import paulNemga from '@/assets/img/team/Paul-Nemga.png'
+import paulusFillepus from '@/assets/img/team/Paulus-Fillepus.png'
+import ravecousMoonga from '@/assets/img/team/Ravecous-Moonga.png'
+import robertBitjong from '@/assets/img/team/Robert-Bitjong.png'
+import samuelBoateng from '@/assets/img/team/Samue-K-Boateng.png'
+import zofeChow from '@/assets/img/team/Zofe-Chow.png'
+
+// Board Members
+import renatHeuberger from '@/assets/img/team/Renat-Heuberger.png'
+import christianJaag from '@/assets/img/team/Christian-Jaag.png'
+import ladeAraba from '@/assets/img/team/Lade-Araba.png'
+import pattyKaruaihe from '@/assets/img/team/Patty-Karuaihe-Martin.png'
+import zebaAhmad from '@/assets/img/team/Zeba-Ahmad.png'
 </script>
 
 <style scoped lang="scss">
