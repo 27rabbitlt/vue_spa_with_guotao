@@ -177,6 +177,7 @@
 .container.c-legal {
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 50px;
   padding: 100px 20px;
 }
 
