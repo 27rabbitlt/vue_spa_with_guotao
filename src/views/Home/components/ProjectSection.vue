@@ -3,7 +3,7 @@
     <div class="container">
       <div class="project-container">
         <div class="project-heading">
-          <h2 class="text-primary text-7xl font-bold">Our Impact</h2>
+          <h2 class="text-primary text-7xl font-bold">Our Projects</h2>
         </div>
         <div class="project-content-container">
           <div class="project-content">

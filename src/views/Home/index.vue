@@ -35,10 +35,27 @@ import ContactSection from './components/ContactSection.vue'
 import PartnerSection from './components/PartnerSection.vue'
 
 import { onMounted } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
 onMounted(() => {
   if (typeof WOW !== 'undefined') {
     new WOW().init()
   }
+  const rawHash = window.location.hash // 比如 "#/impact"
+  // console.log('rawHash:', rawHash)
+  // console.log('route: ', route)
+  // console.log('route.hash', route.hash)
+  // if (route.hash) {
+  //   // 等待 DOM 渲染完成再滚动
+  //   setTimeout(() => {
+  //     const el = document.querySelector(route.hash)
+  //     if (el) {
+  //       el.scrollIntoView({ behavior: 'smooth' })
+  //     }
+  //   }, 300)
+  // }
 })
 </script>
 

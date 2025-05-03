@@ -24,11 +24,12 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted, watch } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { useNavigationStore } from '@/stores/navigation'
 
 // 路由和状态管理
 const route = useRoute()
+const router = useRouter()
 const navigationStore = useNavigationStore()
 
 // 配置数据
@@ -66,6 +67,8 @@ const isActive = (link) => {
 
 // 更新当前激活的导航链接（根据滚动位置）
 const updateActiveLink = () => {
+  console.log('route.path', route.path)
+  console.log('route.hash', route.hash)
   if (route.path !== '/') return // 仅在首页生效
 
   const scrollPosition = window.scrollY
@@ -79,27 +82,37 @@ const updateActiveLink = () => {
     if (!section) continue
 
     const { offsetTop, offsetHeight } = section
+    console.log('current section: ', link.hash)
+    console.log('current pos: ', scrollPosition)
+    console.log('offsetTop: ', offsetTop)
+    console.log('offsetHeight: ', offsetHeight)
+
     if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-      if (!isNavigating.value) {
-        activeLink.value = link
-        if (route.hash !== link.hash) {
-          history.replaceState(null, null, link.hash)
-        }
+      // if (!isNavigating.value) {
+      activeLink.value = link
+      if (route.hash !== link.hash) {
+        console.log('base: ', router.options.history.base)
+        history.replaceState(null, null, router.options.history.base + '/' + link.hash)
       }
+      // }
       foundActive = true
       break
     }
   }
+
+  console.log('-----------------------------------')
 
   // 处理未找到匹配的情况
   if (!foundActive) {
     if (window.scrollY > 0 && !isNavigating.value) {
       // 滚动位置大于0且没有找到匹配的section，清除激活状态
       activeLink.value = null
+      console.log('window.location.pathname: ', window.location.pathname)
       if (route.hash) history.replaceState(null, null, window.location.pathname)
     } else if (window.scrollY === 0 && !activeLink.value) {
       // 滚动到顶部且没有激活的链接，激活第一个hash链接
       const firstHashLink = links.value.find(link => link.hash)
+      console.log('link, link.hash: ', link, link.hash)
       if (firstHashLink && !isNavigating.value) {
         activeLink.value = firstHashLink
         if (route.hash !== firstHashLink.hash) {
