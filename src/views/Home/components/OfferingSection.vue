@@ -2,17 +2,17 @@
   <section id="offering" class="offering-section">
     <div class="container">
       <div class="offering-container">
-        <div class="offering-heading">
+        <div class="offering-heading wow animate__animated animate__fadeInUp" data-wow-duration="1s">
           <h2 class="text-primary text-7xl font-bold">Our Offerings</h2>
         </div>
         <div class="offering-content-container">
           <div class="offering-content">
-            <h3 class="text-primary text-3xl font-bold">Solar Products</h3>
-            <p class="text-primary text-3xl font-medium">We offer a wide range of high-quality Plug & Play solar devices
+            <h3 class="text-primary text-3xl font-bold wow animate__animated animate__fadeInUp" data-wow-duration="1s">Solar Products</h3>
+            <p class="text-primary text-3xl font-medium wow animate__animated animate__fadeInUp" data-wow-duration="1s">We offer a wide range of high-quality Plug & Play solar devices
               as well as energy-efficient household and
               income-generating appliances for lower-and middle-income households, SMEs, and farmers in peri-urban and
               rural areas.</p>
-            <a href="https://products.mpower.africa/" class="btn-primary">
+            <a href="https://products.mpower.africa/" class="btn-primary wow animate__animated animate__fadeInUp" data-wow-duration="1s">
               <span>PRODUCT PORTFOLIO</span>
             </a>
           </div>

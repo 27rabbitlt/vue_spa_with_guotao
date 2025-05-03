@@ -3,7 +3,7 @@
     <div class="container">
       <div class="software-container">
         <div class="details-container">
-          <div class="software-details">
+          <div class="software-details wow animate__animated animate__fadeInUp" data-wow-duration="1s">
             <h2 class="heading text-primary text-3xl font-bold">Software Automation</h2>
             <div class="rich-text">
               <p class="text-primary text-2xl font-medium leading-8">Our in-house fintech solution comprises of an
@@ -19,7 +19,7 @@
               </ul>
             </div>
           </div>
-          <div class="gradient-block">
+          <div class="gradient-block wow animate__animated animate__fadeInUp" data-wow-duration="1s">
             <h4 class="text-2xl font-bold">State-of-the-art technology</h4>
             <p class="text-xl font-medium">Through our access to energy data and payment behaviour, we
               provide the best products to our customers.
@@ -29,7 +29,7 @@
               manufacturer to end-customer.</p>
           </div>
         </div>
-        <div class="image-container">
+        <div class="image-container wow animate__animated animate__fadeInRight" data-wow-duration="1s">
           <img src="@/assets/img/software.png" alt="Software Automation">
         </div>
       </div>

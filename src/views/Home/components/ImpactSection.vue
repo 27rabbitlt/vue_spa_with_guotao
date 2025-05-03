@@ -1,6 +1,6 @@
 <template>
   <section id="impact" class="impact-section">
-    <div class="slider-container">
+    <div class="slider-container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
       <div class="slider-nav-arrows">
         <button class="slider-prev" @click="prevSlide">
           <img src="@/assets/img/arrow-left.svg" alt="Previous" />
@@ -22,12 +22,33 @@
     </div>
     <div class="container">
       <div class="impact-container">
-        <div class="video-container">
-          <button class="video-button" @click="openVideo">
-            <span class="button-text">Watch video</span>
-            <img src="@/assets/img/icon-play.svg" alt="Play" class="play-icon" />
-          </button>
+        <div class="centered-content wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+          <a href="#" class="lightbox-link" @click.prevent="openVideo">
+            <div class="animated-button-outer">
+              <div class="animated-button left-blue">
+                <div class="animated-button-flex-text">
+                  <div class="gradient-button-text flex-version">Watch video</div>
+                  <img src="@/assets/img/icon-play.svg" loading="lazy" alt="" class="video-play">
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
+      </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div v-if="showVideoModal" class="video-modal" @click="closeVideo">
+      <div class="video-modal-content" @click.stop>
+        <button class="close-button" @click="closeVideo">&times;</button>
+        <iframe 
+          src="https://player.vimeo.com/video/404728546?h=a5674f57c7&app_id=122963"
+          width="940" 
+          height="940" 
+          frameborder="0" 
+          allow="autoplay; fullscreen" 
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
   </section>
@@ -44,6 +65,7 @@ let autoPlayTimer = null
 const autoPlayInterval = 3000 // 自动播放间隔，单位毫秒
 const currentIndex = ref(3)
 const isJumping = ref(false)
+const showVideoModal = ref(false)
 
 // 自动读取图片
 const loadImages = async () => {
@@ -125,8 +147,13 @@ const resetAutoPlay = () => {
 }
 
 const openVideo = () => {
-  // 打开视频弹窗的逻辑
-  console.log('Open video')
+  showVideoModal.value = true
+  document.body.style.overflow = 'hidden'
+}
+
+const closeVideo = () => {
+  showVideoModal.value = false
+  document.body.style.overflow = ''
 }
 
 onMounted(() => {
@@ -228,33 +255,115 @@ onUnmounted(() => {
   }
 }
 
-.video-container {
+.centered-content {
   text-align: center;
   margin-top: 40px;
 }
 
-.video-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 15px 30px;
-  background: linear-gradient(226deg, #1a438e, #101c32);
-  border: none;
-  border-radius: 9999px;
-  color: white;
-  font-size: 1rem;
-  font-weight: 500;
+.lightbox-link {
+  display: inline-block;
+  text-decoration: none;
   cursor: pointer;
+}
+
+.animated-button-outer {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.animated-button {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 9999px;
+  overflow: hidden;
   transition: all 0.3s ease;
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    .button-blur-bg {
+      transform: scale(1.1);
+    }
   }
+}
 
-  .play-icon {
-    width: 20px;
-    height: 20px;
+.left-blue {
+  background: linear-gradient(226deg, #1a438e, #101c32);
+}
+
+.animated-button-flex-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.gradient-button-text {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.video-play {
+  width: 20px;
+  height: 20px;
+}
+
+.button-blur-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(23, 42, 77, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.video-modal-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-button {
+  position: fixed;
+  top: 40px;
+  right: 50px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1001;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: rgba(255, 255, 255, 1);
   }
+}
+
+
+.video-modal-content iframe {
+  width: 530px;
+  height: 530px;
+  border: none;
 }
 </style>

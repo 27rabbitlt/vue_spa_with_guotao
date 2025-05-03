@@ -1,8 +1,9 @@
 <template>
   <section id="home" class="home-section">
     <div class="container">
-      <div class="hero-headings">
-        <h1 class="pl-20 pr-20 text-white font-bold text-7xl text-shadow-md text-center wow fadeInUpSmall"
+      <div class="hero-headings wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+      >
+        <h1 class="pl-20 pr-20 text-white font-bold text-7xl text-shadow-md text-center"
           data-wow-offset="1">
           Unlocking solar power in
           emerging

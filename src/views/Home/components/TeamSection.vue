@@ -2,10 +2,10 @@
   <section id="team" class="team-section">
     <div class="container">
       <div class="team-container">
-        <div class="team-heading">
+        <div class="team-heading wow animate__animated animate__fadeInUp" data-wow-duration="1s">
           <h2 class="team-title text-primary text-7xl font-bold">Meet our Team</h2>
         </div>
-        <div class="top-board-container">
+        <div class="top-board-container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
           <TopBoardMember :avatar="manuelSeiffe" name="Manuel Seiffe" role="Co-Founder & CEO"
             linkedin="https://www.linkedin.cn/incareer/in/manuelseiffe/"
             bio="Manuel is an entrepreneur and renewable energy enthusiast. After an M.A at Johns Hopkins SAIS, Manuel worked extensively in the solar sector (Yingli Solar, Q-Cells), as well as for Deutsche Bank. Together with Michael and Greg, they founded MPower in 2017. His expertise includes solar, strategy, business development and Africa." />
@@ -19,7 +19,7 @@
             linkedin="https://www.linkedin.com/in/alejojimenezms/"
             bio="Alejandro is a serial entrepreneur. After completing his degree in Computer Science at the Universidad Militar Nueva Grenada (Colombia) and participating at Y Combinator, he co-founded multiple app-based or educational video games related start-ups. Alejandro is an expert in IT and Software Development." />
         </div>
-        <div class="management-team-container">
+        <div class="management-team-container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
           <h2 class="management-team-title text-primary text-4xl font-bold">Management Team</h2>
           <div class="team-members-grid">
             <TeamMember :avatar="carolineNdum" name="Caroline Ndum" role="Finance Director, Cameroon" />
@@ -36,7 +36,7 @@
             <TeamMember :avatar="zofeChow" name="Zofe Chow" role="Head of Sourcing, China" />
           </div>
         </div>
-        <div class="board-members-container">
+        <div class="board-members-container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
           <h2 class="board-members-title text-primary text-4xl font-bold">Board of Directors</h2>
           <div class="board-members-grid">
             <TeamMember :avatar="renatHeuberger" name="Renat Heuberger" role="Chairman of the Board" />

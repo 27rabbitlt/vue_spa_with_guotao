@@ -2,7 +2,7 @@
   <section id="about" class="about-section">
     <div class="container">
       <div class="about-container">
-        <div class="about-heading">
+        <div class="about-heading wow animate__animated animate__fadeInUp" data-wow-duration="1s">
           <div class="dot-row">
             <div class="dot-blue"></div>
             <div class="dot-gold"></div>
@@ -14,7 +14,7 @@
             software, and financing solutions, we transform accessibility and impact into profitability.
           </p>
         </div>
-        <div class="about-image-holder">
+        <div class="about-image-holder wow animate__animated animate__fadeInRight" data-wow-duration="1s">
           <img class="rounded-2xl" src="@/assets/img/women.jpg" alt="">
         </div>
       </div>

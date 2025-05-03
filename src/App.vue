@@ -10,6 +10,14 @@
 <script setup>
 import NavBar from './components/NavBar.vue'
 import Footer from './components/Footer.vue'
+import { onMounted } from 'vue'
+
+onMounted(() => {
+    // WOW.js 初始化
+    if (typeof WOW !== 'undefined') {
+        new WOW().init()
+    }
+})
 </script>
 
 <style></style>

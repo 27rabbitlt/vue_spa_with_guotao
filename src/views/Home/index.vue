@@ -33,7 +33,7 @@ import TeamSection from './components/TeamSection.vue'
 import LocationSection from './components/LocationSection.vue'
 import ContactSection from './components/ContactSection.vue'
 import PartnerSection from './components/PartnerSection.vue'
-
+import HeroScroll from './components/HeroScroll.vue'
 import { onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 

@@ -2,7 +2,7 @@
   <section id="learnmore" class="learnmore-section">
     <div class="container">
       <div class="learnmore-container">
-        <div class="project-heading">
+        <div class="project-heading wow animate__animated animate__fadeInUp" data-wow-duration="1s">
           <h3 class="text-primary text-3xl font-bold leading-15">Learn more about MPower!</h3>
           <p class="text-primary text-2xl font-medium leading-10">Learn more about our mission, partnerships, and the
             lasting
@@ -12,7 +12,7 @@
         </div>
 
         <a href="https://mpower.notion.site/MPower-Unlocking-solar-power-in-Africa-11a4fa25f111809ebee7e71ba35718b5"
-          class="btn-primary">
+          class="btn-primary wow animate__animated animate__fadeInUp" data-wow-duration="1s">
           <span>MORE INFORMATION HERE</span>
         </a>
 

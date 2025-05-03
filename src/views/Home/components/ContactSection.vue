@@ -2,7 +2,7 @@
   <section id="contact" class="contact-section">
     <div class="container">
       <div class="contact-container">
-        <div class="contact-heading">
+        <div class="contact-heading wow animate__animated animate__fadeInUp" data-wow-duration="1s">
           <div class="dot-row">
             <div class="dot-blue"></div>
             <div class="dot-gold"></div>
@@ -10,7 +10,7 @@
           <h2 class="text-primary text-8xl font-bold">Change lives using the power of solar.</h2>
         </div>
         <div class="contact-row-holder">
-          <div class="contact-row">
+          <div class="contact-row wow animate__animated animate__fadeInUp" data-wow-duration="1s">
             <div class="cta-row-details">
               <h3 class="text-primary text-3xl font-bold">Corporates & Investors</h3>
               <p class="text-primary text-3xl font-medium">Interested in partnering to tackle climate problems?</p>
@@ -22,7 +22,7 @@
           </div>
 
 
-          <div class="contact-row">
+          <div class="contact-row wow animate__animated animate__fadeInUp" data-wow-duration="1s">
             <div class="cta-row-details">
               <h3 class="text-primary text-3xl font-bold">Impact Job Seekers</h3>
               <p class="text-primary text-3xl font-medium">Looking for a role at MPower?</p>
@@ -33,7 +33,7 @@
           </div>
 
 
-          <div class="contact-row">
+          <div class="contact-row wow animate__animated animate__fadeInUp" data-wow-duration="1s">
             <div class="cta-row-details">
               <h3 class="text-primary text-3xl font-bold">Say Hi!</h3>
               <p class="text-primary text-3xl font-medium">We are always interested in exciting dossiers and

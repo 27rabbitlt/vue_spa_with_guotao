@@ -2,12 +2,19 @@
   <section id="greenfact" class="greenfact-section">
     <div class="container">
       <div class="greenfact-container">
-        <div class="greenfact-heading">
+        <div class="greenfact-heading wow animate__animated animate__fadeInUp" 
+        data-wow-delay="0.5s"
+        data-wow-offset="0.1"
+        data-wow-duration="1s"
+        >
           <p class="text-white text-[3.25rem] font-bold text-center leading-14">We partner with local distributors,
             corporates, and
             investors to scale projects that remove emissions and transform communities.</p>
         </div>
-        <div class="numbers-container">
+        <div class="numbers-container wow animate__animated animate__fadeInUp" 
+        data-wow-delay="1s"
+        data-wow-offset="0.1"
+        data-wow-duration="1s">
           <div class="number-item">
             <span class="text-white text-5xl font-bold text-center">15,000</span>
             <span class="text-white text-2xl font-medium text-center">tCO2e reduced</span>
@@ -64,7 +71,7 @@
 .numbers-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 0 50px;
   gap: 150px;
