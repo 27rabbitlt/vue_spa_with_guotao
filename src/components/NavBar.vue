@@ -10,9 +10,6 @@
           {{ link.text }}
         </li>
         <div class="social">
-          <a href="https://www.youtube.com/@MPowerVentures" target="_blank">
-            <img src="@/assets/img/youtube-icon.png" alt="youtube">
-          </a>
           <a href="https://www.linkedin.com/company/eride-africa/posts/?feedView=all" target="_blank">
             <img src="@/assets/img/linked-in-icon.png" alt="linkedin">
           </a>
@@ -242,7 +239,7 @@ onUnmounted(() => {
   padding: 30px;
   z-index: 1000;
   transition: transform 0.6s ease, background 0.2s linear;
-  background: linear-gradient(135deg, 
+  background: linear-gradient(135deg,
       rgba(10, 10, 10, var(--navbar-bg-alpha, 1)) 70%,
       rgba(31, 22, 12, var(--navbar-bg-alpha, 1)));
 

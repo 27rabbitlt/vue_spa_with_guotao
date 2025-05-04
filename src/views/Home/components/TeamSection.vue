@@ -6,9 +6,9 @@
           <h2 class="title team-title text-primary text-7xl font-bold">Meet our Team</h2>
         </div>
         <div class="top-board-container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-          <TopBoardMember :avatar="manuelSeiffe" name="Manuel Seiffe" role="Co-Founder & CEO"
-            linkedin="https://www.linkedin.cn/incareer/in/manuelseiffe/"
-            bio="Manuel is an entrepreneur and renewable energy enthusiast. After an M.A at Johns Hopkins SAIS, Manuel worked extensively in the solar sector (Yingli Solar, Q-Cells), as well as for Deutsche Bank. Together with Michael and Greg, they founded MPower in 2017. His expertise includes solar, strategy, business development and Africa." />
+          <TopBoardMember :avatar="jacob" name="Jacob Anz" role="Founder & CTO"
+            linkedin="https://www.linkedin.com/in/jacob-anz-68a67b86/?originalSubdomain=ch"
+            bio="Jacob is an entrepreneur and remarkable engineer. He is the founder and lead engineer of E-Ride" />
           <TopBoardMember :avatar="gregNau" name="Greg Nau" role="Co-Founder & CFO"
             linkedin="https://www.linkedin.com/in/rightnau/"
             bio="Gregor is a driven business and finance expert. After pursuing an MBA at the IE Business School in Madrid, he worked as a partner at a boutique auditing and international tax advisory, before deciding to found MPower. Gregor has expertise in finance, accounting & tax, Latin America." />
@@ -56,6 +56,7 @@ import TopBoardMember from '@/components/TopBoardMember.vue'
 import TeamMember from '@/components/TeamMember.vue'
 
 // Top Board Members
+import jacob from '@/assets/img/team/jacob.jpeg'
 import manuelSeiffe from '@/assets/img/team/Manuel-Seiffe.png'
 import gregNau from '@/assets/img/team/Greg-Nau.png'
 import me from '@/assets/img/team/Michael-Eschmann.png'
