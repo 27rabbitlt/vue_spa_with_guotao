@@ -2,13 +2,24 @@
 import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home/index.vue'
 import PrivacyPolicy from '../views/PrivacyPolicy/index.vue'
-// import 
+import News from '../views/News/index.vue'
+import NewsDetail from '../views/NewsDetail/index.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home,
+  },
+  {
+    path: '/news',
+    name: 'News',
+    component: News,
+  },
+  {
+    path: '/news/:id',
+    name: 'NewsDetail',
+    component: NewsDetail,
   },
   {
     path: '/privacy-policy',

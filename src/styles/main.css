@@ -15,6 +15,11 @@
   --color-light-bg: #ffffff;
 }
 
+:root {
+  --el-color-primary: #b8860b; 
+  --el-color-primary-light-3: rgba(255, 107, 107, 0.3); /* 可选：调整浅色变体 */
+}
+
 .title {
   font-family: ​Palatino​, 'Palatino Linotype', sans-serif;
 }
@@ -55,6 +60,11 @@ section {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+}
+
+.page-container{
+  margin-top: 150px;
+  margin-bottom: 50px;
 }
 .gradient-block {
   color: var(--color-text);
