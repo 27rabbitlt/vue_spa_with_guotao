@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar" :class="{ 'navbar-hidden': isHidden }">
+  <nav class="navbar" :class="{ 'navbar-hidden': isHidden, 'navbar-fixed': route.path === '/' }">
     <div class="nav-container">
       <div class="logo" @click="handleLogoClick">
         <img src="@/assets/logo.svg" alt="Logo">
@@ -232,12 +232,11 @@ onUnmounted(() => {
 
 <style scoped lang="scss">
 .navbar {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
   padding: 30px;
-  z-index: 1000;
   transition: transform 0.6s ease, background 0.2s linear;
   background: linear-gradient(135deg,
       rgba(10, 10, 10, var(--navbar-bg-alpha, 1)) 70%,
@@ -245,6 +244,10 @@ onUnmounted(() => {
 
   &-hidden {
     transform: translateY(-100%);
+  }
+
+  &-fixed {
+    position: fixed;
   }
 }
 

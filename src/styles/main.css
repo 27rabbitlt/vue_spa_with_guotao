@@ -63,7 +63,6 @@ section {
 }
 
 .page-container{
-  margin-top: 150px;
   margin-bottom: 50px;
 }
 .gradient-block {
@@ -132,4 +131,12 @@ section {
 
 .btn-primary:active {
   transform: translateY(0);
+}
+
+
+
+.pagination {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
 }

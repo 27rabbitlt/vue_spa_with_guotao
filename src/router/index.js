@@ -5,32 +5,103 @@ import PrivacyPolicy from '../views/PrivacyPolicy/index.vue'
 import News from '../views/News/index.vue'
 import NewsDetail from '../views/NewsDetail/index.vue'
 import SignIn from '../views/Auth/index.vue'
+import Layout from '../views/Layout/index.vue'
+import Admin from '../views/Admin/index.vue'
+import UserList from '../views/Admin/components/UserList.vue'
+import NewsList from '../views/Admin/components/NewsList.vue'
+import AddNews from '@/views/Admin/components/AddNews.vue'
+import EditNews from '@/views/Admin/components/EditNews.vue'
+
+// const routes = [
+//   {
+//     path: '/',
+//     name: 'Home',
+//     component: Home,
+//   },
+//   {
+//     path: '/news',
+//     name: 'News',
+//     component: News,
+//   },
+//   {
+//     path: '/news/:id',
+//     name: 'NewsDetail',
+//     component: NewsDetail,
+//   },
+//   {
+//     path: '/signin',
+//     name: 'SignIn',
+//     component: SignIn,
+//   },
+//   {
+//     path: '/privacy-policy',
+//     name: 'PrivacyPolicy',
+//     component: PrivacyPolicy,
+//   }
+// ]
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home,
-  },
-  {
-    path: '/news',
-    name: 'News',
-    component: News,
-  },
-  {
-    path: '/news/:id',
-    name: 'NewsDetail',
-    component: NewsDetail,
-  },
-  {
-    path: '/signin',
-    name: 'SignIn',
-    component: SignIn,
-  },
-  {
-    path: '/privacy-policy',
-    name: 'PrivacyPolicy',
-    component: PrivacyPolicy,
+    component: Layout,
+    children: [
+      {
+        path: '',
+        name: 'Home',
+        component: Home,
+      },
+      {
+        path: '/news',
+        name: 'News',
+        component: News,
+      },
+      {
+        path: '/news/:id',
+        name: 'NewsDetail',
+        component: NewsDetail,
+      },
+      {
+        path: '/signin',
+        name: 'SignIn',
+        component: SignIn,
+      },
+      {
+        path: '/privacy-policy',
+        name: 'PrivacyPolicy',
+        component: PrivacyPolicy,
+      },
+      {
+        path: '/admin',
+        component: Admin,
+        children: [
+          {
+            path: '',
+            redirect: '/admin/users'
+          },
+          {
+            path: 'users',
+            name: 'UserList',
+            component: UserList
+          },
+          {
+            path: 'news',
+            name: 'NewsList',
+            component: NewsList
+          },
+          {
+            path: 'news/add',
+            name: 'AddNews',
+            component: AddNews
+          },
+          {
+            path: 'news/edit/:id',
+            name: 'EditNews',
+            component: EditNews,
+            props: true
+          }
+        ]
+      }
+    ],
   }
 ]
 

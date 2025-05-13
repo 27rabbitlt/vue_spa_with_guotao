@@ -1,4 +1,4 @@
-<!-- App.vue -->
+<!-- App.vue
 <template>
   <NavBar />
   <router-view v-slot="{ Component }">
@@ -17,6 +17,23 @@ onMounted(() => {
     if (typeof WOW !== 'undefined') {
         new WOW().init()
     }
+})
+</script>
+
+<style></style> -->
+
+<!-- App.vue -->
+<template>
+  <router-view />
+</template>
+
+<script setup>
+import { onMounted } from 'vue'
+onMounted(() => {
+  // WOW.js 初始化
+  if (typeof WOW !== 'undefined') {
+    new WOW().init()
+  }
 })
 </script>
 
