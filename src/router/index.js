@@ -4,6 +4,7 @@ import Home from '../views/Home/index.vue'
 import PrivacyPolicy from '../views/PrivacyPolicy/index.vue'
 import News from '../views/News/index.vue'
 import NewsDetail from '../views/NewsDetail/index.vue'
+import SignIn from '../views/Auth/index.vue'
 
 const routes = [
   {
@@ -20,6 +21,11 @@ const routes = [
     path: '/news/:id',
     name: 'NewsDetail',
     component: NewsDetail,
+  },
+  {
+    path: '/signin',
+    name: 'SignIn',
+    component: SignIn,
   },
   {
     path: '/privacy-policy',

@@ -6,3 +6,10 @@
     ),
   )
 );
+
+:root {
+  --el-border-radius-base: 0; /* 移除所有组件的默认圆角 */
+  --el-font-size-base: 16px; /* 默认 14px，修改为 16px */
+  --el-font-size-small: 14px; /* 小号字体 */
+  --el-font-size-large: 18px; /* 大号字体 */
+}
