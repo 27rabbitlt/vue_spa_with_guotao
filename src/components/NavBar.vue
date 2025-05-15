@@ -237,6 +237,7 @@ onUnmounted(() => {
   left: 0;
   right: 0;
   padding: 30px;
+  z-index: 1000;
   transition: transform 0.6s ease, background 0.2s linear;
   background: linear-gradient(135deg,
       rgba(10, 10, 10, var(--navbar-bg-alpha, 1)) 70%,

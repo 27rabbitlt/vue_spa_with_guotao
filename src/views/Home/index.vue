@@ -3,9 +3,10 @@
     <!-- <HeroScroll /> -->
     <HomeSection />
     <AboutSection />
+    <ModelShowcase />
     <OfferingSection />
     <SoftwareSection />
-    <FinanceSection />
+    <FinanceSection /> 
     <ProjectSection />
     <ImpactSection />
     <LearnmoreSection />
@@ -36,6 +37,7 @@ import PartnerSection from './components/PartnerSection.vue'
 import HeroScroll from './components/HeroScroll.vue'
 import { onMounted } from 'vue'
 import { useRoute } from 'vue-router'
+import ModelShowcase from './components/ModelShowcase.vue'
 
 const route = useRoute()
 
