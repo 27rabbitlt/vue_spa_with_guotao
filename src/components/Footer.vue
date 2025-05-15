@@ -4,7 +4,7 @@
       <div class="footer-container">
         <div class="footer-logo-container">
           <a href="#" class="link-block" rel="noopener noreferrer">
-            <img src="@/assets/logo.svg" loading="lazy" alt="MPower logo" class="footer-logo" />
+            <img src="@/assets/logo.svg" loading="lazy" alt="Eride logo" class="footer-logo" />
           </a>
         </div>
         <div class="get-in-touch-container flex">
@@ -36,7 +36,7 @@
       </div>
 
       <div class="footer-bottom text-gray-400">
-        <span>©2025 MPower</span>
+        <span>©2025 Eride Africa</span>
         <router-link to="/privacy-policy" class="footer-bottom-links text-gray-400" rel="noopener noreferrer">Privacy &
           Terms</router-link>
         <span>Made by Oddyti</span>

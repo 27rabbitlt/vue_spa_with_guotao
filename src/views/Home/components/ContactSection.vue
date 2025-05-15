@@ -16,7 +16,7 @@
               <p class="text-primary text-3xl font-medium">Interested in partnering to tackle climate problems?</p>
             </div>
 
-            <a href="mailto:info@mpower.africa?subject=Let's%20talk%20business" class="btn-primary">
+            <a href="mailto:tengliu@eride.africa?subject=Let's%20talk%20business" class="btn-primary">
               <span>Let's talk business</span>
             </a>
           </div>
@@ -25,9 +25,9 @@
           <div class="contact-row wow animate__animated animate__fadeInUp" data-wow-duration="1s">
             <div class="cta-row-details">
               <h3 class="title text-primary text-3xl font-bold">Impact Job Seekers</h3>
-              <p class="text-primary text-3xl font-medium">Looking for a role at MPower?</p>
+              <p class="text-primary text-3xl font-medium">Looking for a role at Eride?</p>
             </div>
-            <a href="https://www.linkedin.com/company/mpowerventures/jobs/?viewAsMember=true" class="btn-primary" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/company/eride-africa/posts/?feedView=all" class="btn-primary" target="_blank" rel="noopener noreferrer">
               <span>Open vacancies</span>
             </a>
           </div>
@@ -39,7 +39,7 @@
               <p class="text-primary text-3xl font-medium">We are always interested in exciting dossiers and
                 personalities.</p>
             </div>
-            <a href="mailto:info@mpower.africa?subject=Say%20Hi!" class="btn-primary">
+            <a href="mailto:jacob@eride.africa?subject=Say%20Hi!" class="btn-primary">
               <span>Send us an email</span>
             </a>
           </div>

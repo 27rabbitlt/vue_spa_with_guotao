@@ -3,10 +3,10 @@
     <div class="container">
       <div class="learnmore-container">
         <div class="project-heading wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-          <h3 class="title text-primary text-4xl font-bold leading-15">Learn more about MPower!</h3>
+          <h3 class="title text-primary text-4xl font-bold leading-15">Learn more about Eride!</h3>
           <p class="text-primary text-2xl font-medium leading-10">Learn more about our mission, partnerships, and the
             lasting
-            impact of our solar solutions across Africa. Discover how MPower Ventures is transforming communities by
+            impact of our solar solutions across Africa. Discover how Eride Ventures is transforming communities by
             providing clean, reliable energy, fostering sustainable growth, and creating opportunities through
             innovation. We have created a dedicated page alongside our ongoing crowdfunding campaigns.</p>
         </div>
