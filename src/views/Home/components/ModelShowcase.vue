@@ -1,33 +1,35 @@
 <template>
-  <div class="flex flex-row w-full min-h-[400px]">
-    <!-- 左侧 3D -->
-    <div class="w-[60%] min-h-[400px] bg-gray-100 relative">
-      <canvas ref="canvas" class="w-full h-full block absolute top-0 left-0" />
+  <div class="container">
+    <div class="flex flex-row w-full min-h-[400px]">
+      <!-- 左侧 3D -->
+      <div class="w-[60%] min-h-[400px] bg-gray-100 relative">
+        <canvas ref="canvas" class="w-full h-full block absolute top-0 left-0" />
+      </div>
+
+      <!-- 右侧内容 -->
+      <div class="w-[40%] p-6 bg-white">
+        <h1 class="text-3xl font-bold mb-4">未来电动摩托车</h1>
+        <p class="text-gray-700 text-lg mb-4">
+          我们的电动摩托车融合了创新设计与尖端科技，拥有高效能与智能化操控系统，是城市出行的理想之选。
+        </p>
+        <ul class="list-disc pl-5 text-gray-600 space-y-2">
+          <li>极速可达 120km/h</li>
+          <li>续航 180 公里</li>
+          <li>智能仪表盘</li>
+          <li>支持快充、换电</li>
+        </ul>
+      </div>
     </div>
 
-    <!-- 右侧内容 -->
-    <div class="w-[40%] p-6 bg-white">
-      <h1 class="text-3xl font-bold mb-4">未来电动摩托车</h1>
-      <p class="text-gray-700 text-lg mb-4">
-        我们的电动摩托车融合了创新设计与尖端科技，拥有高效能与智能化操控系统，是城市出行的理想之选。
-      </p>
-      <ul class="list-disc pl-5 text-gray-600 space-y-2">
-        <li>极速可达 120km/h</li>
-        <li>续航 180 公里</li>
-        <li>智能仪表盘</li>
-        <li>支持快充、换电</li>
-      </ul>
+    <!-- 页面其他内容 -->
+    <div class="p-10 bg-gray-50 text-gray-800">
+      <h2 class="text-2xl font-semibold mb-4">更多介绍</h2>
+      <p class="mb-4">我们正打造一个完整的电动车生态系统，从车辆制造到充电网络，实现真正的可持续出行。</p>
+      <p class="mb-4">请继续向下浏览了解我们的设计理念与技术优势。</p>
+
+      <!-- 模拟长页面 -->
+      <!-- <div class="h-[1000px] bg-gradient-to-b from-white to-gray-200"></div> -->
     </div>
-  </div>
-
-  <!-- 页面其他内容 -->
-  <div class="p-10 bg-gray-50 text-gray-800">
-    <h2 class="text-2xl font-semibold mb-4">更多介绍</h2>
-    <p class="mb-4">我们正打造一个完整的电动车生态系统，从车辆制造到充电网络，实现真正的可持续出行。</p>
-    <p class="mb-4">请继续向下浏览了解我们的设计理念与技术优势。</p>
-
-    <!-- 模拟长页面 -->
-    <!-- <div class="h-[1000px] bg-gradient-to-b from-white to-gray-200"></div> -->
   </div>
 </template>
 
