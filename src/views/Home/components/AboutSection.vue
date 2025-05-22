@@ -2,20 +2,20 @@
   <section id="about" class="about-section">
     <div class="container">
       <div class="about-container">
+        <div class="about-image-holder wow animate__animated animate__fadeInLeft" data-wow-duration="1s">
+          <img src="@/assets/img/beautiful_bike.jpeg" alt="">
+        </div>
         <div class="about-heading wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-          <div class="dot-row">
+          <!-- <div class="dot-row">
             <div class="dot-blue"></div>
             <div class="dot-gold"></div>
-          </div>
+          </div> -->
           <h2 class="text-primary text-7xl font-bold title">Sustainability Community Innovation</h2>
           <p class="text-primary text-3xl">
             E‑Ride Africa is on a mission to transform transport in Zambia and beyond. Our in‑house team handles every
             step of production—battery assembly, 3D printing, CNC cutting, welding—so you get locally manufactured,
             world‑class electric vehicles.
           </p>
-        </div>
-        <div class="about-image-holder wow animate__animated animate__fadeInRight" data-wow-duration="1s">
-          <img src="@/assets/img/beautiful_bike.jpeg" alt="">
         </div>
       </div>
     </div>

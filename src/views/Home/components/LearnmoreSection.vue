@@ -11,12 +11,9 @@
             innovation. We have created a dedicated page alongside our ongoing crowdfunding campaigns.</p>
         </div>
 
-        <iframe src="https://swift-holly-a9f.notion.site/ebd/1f40bd663ca180dc9d1fcd9d507dd3b8" width="100%" height="600" frameborder="0" allowfullscreen />
+        <iframe src="https://swift-holly-a9f.notion.site/ebd/1f40bd663ca180dc9d1fcd9d507dd3b8" width="100%" height="600"
+          frameborder="0" allowfullscreen />
 
-        <a href="https://mpower.notion.site/MPower-Unlocking-solar-power-in-Africa-11a4fa25f111809ebee7e71ba35718b5"
-          class="btn-primary wow animate__animated animate__fadeInUp" data-wow-duration="1s" target="_blank">
-          <span>MORE INFORMATION HERE</span>
-        </a>
 
       </div>
     </div>

@@ -56,6 +56,11 @@ const routes = [
         component: News,
       },
       {
+        path: '/privacy-policy',
+        name: 'Privacy-Policy',
+        component: PrivacyPolicy,
+      },
+      {
         path: '/news/:id',
         name: 'NewsDetail',
         component: NewsDetail,
@@ -64,11 +69,6 @@ const routes = [
         path: '/signin',
         name: 'SignIn',
         component: SignIn,
-      },
-      {
-        path: '/privacy-policy',
-        name: 'PrivacyPolicy',
-        component: PrivacyPolicy,
       },
       {
         path: '/admin',

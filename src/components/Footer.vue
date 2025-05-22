@@ -12,8 +12,8 @@
           <div class="contact-address-container text-sm flex flex-col gap-4">
             <div class="contact-address-item flex flex-col">
               <span class="text-white">Jacob Anz</span>
-              <a href="jacob@eride.africa" class="text-white" target="_blank"
-                rel="noopener noreferrer">jacob@eride.africa</a>
+              <a href="info@eride.africa" class="text-white" target="_blank"
+                rel="noopener noreferrer">info@eride.africa</a>
             </div>
           </div>
         </div>
@@ -39,7 +39,7 @@
         <span>©2025 Eride Africa</span>
         <router-link to="/privacy-policy" class="footer-bottom-links text-gray-400" rel="noopener noreferrer">Privacy &
           Terms</router-link>
-        <span>Made by Oddyti</span>
+        <span>Made by Eride</span>
       </div>
     </div>
   </footer>

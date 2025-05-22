@@ -3,19 +3,14 @@
     <div class="container">
       <div class="project-container">
         <div class="project-heading wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-          <h2 class="title text-primary text-7xl font-bold">Our Impact</h2>
+          <h2 class="title text-primary text-7xl font-bold">Our E-Mobility, solar system and engineering
+          </h2>
         </div>
         <div class="project-content-container">
           <div class="project-content wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-            <p class="text-primary text-3xl font-medium">Check out different projects implemented in all our countries
-              in Africa.</p>
-            <a href="https://cdn.prod.website-files.com/62a6db73ebc0ae41fe521319/67ced6586e3525e4c8a2f6b9_2025-FEB_Project%20references_REDUCED%20VERSION_10-03-2025.pdf"
-              class="btn-primary" target="_blank">
-              <span>PROJECT REFERENCES</span>
-            </a>
+            <p class="text-primary text-3xl font-medium">Show display several pictures, seems not yet provided.</p>
           </div>
           <div class="image-container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-            <img src="@/assets/img/impact.jpg" alt="Impact Image">
           </div>
         </div>
       </div>
@@ -24,6 +19,8 @@
 </template>
 
 <script setup>
+import SoftwareSection from './SoftwareSection.vue';
+
 </script>
 
 <style scoped lang="scss">

@@ -5,8 +5,8 @@
         <img src="@/assets/logo.svg" alt="Logo">
       </div>
       <ul class="nav-list">
-        <li v-for="link in links" :key="link.name" class="nav-item" :class="{ 'nav-item-active': isActive(link) }"
-          @click="handleNavigation(link)">
+        <li v-for="link in links_navbar" :key="link.name" class="nav-item"
+          :class="{ 'nav-item-active': isActive(link) }" @click="handleNavigation(link)">
           {{ link.text }}
         </li>
         <div class="social">
@@ -29,12 +29,24 @@ const route = useRoute()
 const router = useRouter()
 const navigationStore = useNavigationStore()
 
-// 配置数据
-const links = ref([
-  { name: 'home', text: 'HOME', hash: '#home' },
-  { name: 'about', text: 'ABOUT', hash: '#about' },
-  { name: 'offering', text: 'OFFERING', hash: '#offering' },
+// Configure links on NavBar
+const links_navbar = ref([
+  // { name: 'home', text: 'HOME', hash: '#home' },
+  { name: 'about', text: 'ABOUT US', hash: '#about' },
+  { name: 'services', text: 'SERVICES', hash: '#services' },
   { name: 'impact', text: 'IMPACT', hash: '#impact' },
+  { name: 'news', text: 'NEWS', hash: '#news' },
+  { name: 'team', text: 'TEAM', hash: '#team' },
+  { name: 'contact', text: 'CONTACT', hash: '#contact' }
+]);
+
+// Configure links overall
+const links = ref([
+  // { name: 'home', text: 'HOME', hash: '#home' },
+  { name: 'about', text: 'ABOUT US', hash: '#about' },
+  { name: 'services', text: 'SERVICES', hash: '#services' },
+  { name: 'impact', text: 'IMPACT', hash: '#impact' },
+  { name: 'project', hash: '#project' },
   { name: 'team', text: 'TEAM', hash: '#team' },
   { name: 'contact', text: 'CONTACT', hash: '#contact' }
 ])
