@@ -34,20 +34,42 @@ defineProps({
   align-items: flex-start;
   text-align: left;
   margin: 0;
+  padding: 20px;
+  background: #ffffff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 400px;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .member-avatar {
-  width: 100%;
+  height: 150px;
+  width: 150px;
   overflow: hidden;
+  margin-bottom: 1.5rem;
 
   .avatar-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
   }
 }
 
 .member-info {
   width: 100%;
+}
+
+.member-name {
+  margin-bottom: 0.5rem;
+}
+
+.member-role {
+  margin-bottom: 1rem;
+  color: #666;
 }
 </style>

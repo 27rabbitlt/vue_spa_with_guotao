@@ -9,7 +9,7 @@
       <a v-if="linkedin" :href="linkedin" target="_blank" class="linkedin-link">
         <img src="@/assets/img/blue-linkedin.svg" alt="LinkedIn" class="linkedin-icon" />
       </a>
-      <p class="member-bio text-primary text-xl font-medium">{{ bio }}</p>
+      <p class="member-bio text-primary text-base font-medium">{{ bio }}</p>
     </div>
   </div>
 </template>
@@ -46,10 +46,20 @@ defineProps({
   align-items: center;
   text-align: center;
   margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .member-avatar {
   width: 100%;
+  height: 250px;
   overflow: hidden;
   margin-bottom: 1.5rem;
 
@@ -57,11 +67,31 @@ defineProps({
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
   }
+}
+
+.member-info {
+  width: 100%;
+}
+
+.member-name {
+  margin-bottom: 0.5rem;
+}
+
+.member-role {
+  margin-bottom: 1rem;
+  color: #666;
 }
 
 .linkedin-link {
   display: inline-block;
+  margin-bottom: 1rem;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   .linkedin-icon {
     width: 15px;
