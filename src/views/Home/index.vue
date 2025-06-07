@@ -3,7 +3,7 @@
     <!-- <HeroScroll /> -->
     <HomeSection />
     <AboutSection />
-    <!-- <ModelShowcase /> -->
+    <ModelShowcase />
     <ServicesSection />
     <ProjectSection />
     <FinanceSection />

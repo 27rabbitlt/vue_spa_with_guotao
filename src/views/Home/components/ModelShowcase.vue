@@ -5,10 +5,10 @@
 
     <!-- Right: Info Section -->
     <div class="w-full lg:w-1/2 p-8 bg-white">
-      <h2 class="text-2xl font-bold mb-4">我们的摩托车</h2>
+      <h2 class="text-2xl font-bold mb-4">Our Motor</h2>
       <p class="text-gray-700 leading-relaxed">
-        这是一辆由我们自主研发设计的电动摩托车，拥有出色的动力性能与现代感十足的外观。<br><br>
-        它不仅采用环保材料制造，还融合了智能化技术，是我们为非洲市场量身打造的理想交通工具。
+        Showcase of our motorcycle 3D model, not sure whether to keep it or not
+        because it seems that this is the best that a software can do.
       </p>
     </div>
   </div>
@@ -44,7 +44,7 @@ onMounted(() => {
   controls.enableDamping = true
 
   const loader = new GLTFLoader()
-  loader.load('model_car.glb', (gltf) => {
+  loader.load('edited_bike.glb', (gltf) => {
     const model = gltf.scene
     model.scale.set(1, 1, 1) // 如模型太大/小，可调整比例
     model.position.set(0, 0, 0)
