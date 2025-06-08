@@ -27,7 +27,7 @@ const scrollToNext = () => {
 
 <style scoped lang="scss">
 .home-section {
-  background-image: url('@/assets/img/home-bg.jpeg');
+  background-image: url('@/assets/img/home-bg.jpg');
   background-size: cover;
   background-position: 50%;
   min-height: 100vh;

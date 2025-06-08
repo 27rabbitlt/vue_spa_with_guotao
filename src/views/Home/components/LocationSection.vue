@@ -10,7 +10,7 @@
           <img src="@/assets/img/map.jpeg" alt="Our Locations" class="map-placeholder" />
           <div class="map-overlay">
             <span class="text-white text-2xl font-normal mr-4">View on Google Maps</span>
-            <img src="@/assets/img/new-window.svg" loading="lazy" alt="" class="new-window-icon" />
+            <!-- <img src="@/assets/img/new-window.svg" loading="lazy" alt="" class="new-window-icon" /> -->
           </div>
         </a>
       </div>
@@ -42,6 +42,8 @@
   position: relative;
   display: block;
   width: 100%;
+  border: 2px solid #000000;
+  border-radius: 15px;
   overflow: hidden;
   transform-style: preserve-3d;
   transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);

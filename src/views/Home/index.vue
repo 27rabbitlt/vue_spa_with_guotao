@@ -8,7 +8,7 @@
     <ProjectSection />
     <FinanceSection />
     <ImpactSection />
-    <LearnmoreSection />
+    <!-- <LearnmoreSection /> -->
     <!-- <GreenFactSection /> -->
     <TeamSection />
     <LocationSection />

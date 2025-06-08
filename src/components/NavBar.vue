@@ -1,20 +1,24 @@
 <template>
   <nav class="navbar" :class="{ 'navbar-hidden': isHidden, 'navbar-fixed': route.path === '/' }">
     <div class="nav-container">
-      <div class="logo" @click="handleLogoClick">
-        <img src="@/assets/logo.svg" alt="Logo">
-      </div>
       <ul class="nav-list">
-        <li v-for="link in links_navbar" :key="link.name" class="nav-item"
-          :class="{ 'nav-item-active': isActive(link) }" @click="handleNavigation(link)">
-          {{ link.text }}
-        </li>
-        <div class="social">
+        <div class=" social">
           <a href="https://www.linkedin.com/company/eride-africa/posts/?feedView=all" target="_blank">
             <img src="@/assets/img/linked-in-icon.png" alt="linkedin">
           </a>
         </div>
+        <li v-for="link in links_navbar" :key="link.name" class="nav-item"
+          :class="{ 'nav-item-active': isActive(link) }" @click="handleNavigation(link)">
+          {{ link.text }}
+        </li>
+        <li class="nav-item">
+          <a href="https://swift-holly-a9f.notion.site/ebd/1f40bd663ca180dc9d1fcd9d507dd3b8" target="_blank"
+            class="external-link">NEWS</a>
+        </li>
       </ul>
+      <div class="logo" @click="handleLogoClick">
+        <img src="@/assets/logo.svg" alt="Logo">
+      </div>
     </div>
   </nav>
 </template>
@@ -35,7 +39,7 @@ const links_navbar = ref([
   { name: 'about', text: 'ABOUT US', hash: '#about' },
   { name: 'services', text: 'SERVICES', hash: '#services' },
   { name: 'impact', text: 'IMPACT', hash: '#impact' },
-  { name: 'news', text: 'NEWS', hash: '#news' },
+  // { name: 'news', text: 'NEWS', hash: '#news' },
   { name: 'team', text: 'TEAM', hash: '#team' },
   { name: 'contact', text: 'CONTACT', hash: '#contact' }
 ]);

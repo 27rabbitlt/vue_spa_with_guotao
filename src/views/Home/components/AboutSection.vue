@@ -12,9 +12,9 @@
           </div> -->
           <h2 class="text-primary text-7xl font-bold title">Sustainability Community Innovation</h2>
           <p class="text-primary text-3xl">
-            E‑Ride Africa is on a mission to transform transport in Zambia and beyond. Our in‑house team handles every
-            step of production—battery assembly, 3D printing, CNC cutting, welding—so you get locally manufactured,
-            world‑class electric vehicles.
+            E-Ride Africa is on a mission to transform transport in Zambia and beyond. Our team develops electric
+            motorcycles, battery systems and monitoring tools - in our offices we handle battery assembly, 3D printing,
+            CNC cutting, welding - so you get locally built, affordable electric vehicles.
           </p>
         </div>
       </div>
