@@ -3,7 +3,7 @@
     <!-- <HeroScroll /> -->
     <HomeSection />
     <AboutSection />
-    <ModelShowcase />
+    <!-- <ModelShowcase /> -->
     <ServicesSection />
     <ProjectSection />
     <FinanceSection />
@@ -12,7 +12,7 @@
     <!-- <GreenFactSection /> -->
     <TeamSection />
     <LocationSection />
-    <!-- <ContactSection /> -->
+    <ContactSection />
     <!-- <PartnerSection /> -->
   </div>
 </template>

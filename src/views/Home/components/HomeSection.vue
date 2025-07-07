@@ -1,5 +1,10 @@
 <template>
   <section id="home" class="home-section">
+    <video autoplay muted loop class="background-video">
+      <source src="@/assets/video/home-bg.mp4" type="video/mp4">
+      <!-- 后备：如果视频无法加载，显示背景图片 -->
+      Your browser does not support the video tag.
+    </video>
     <div class="container">
       <div class="hero-headings wow animate__animated animate__fadeInUp" data-wow-duration="1s">
         <h1 class="title pl-20 pr-20 text-white font-bold text-7xl text-shadow-md text-center" data-wow-offset="1">
@@ -27,6 +32,7 @@ const scrollToNext = () => {
 
 <style scoped lang="scss">
 .home-section {
+  position: relative;
   background-image: url('@/assets/img/home-bg.jpg');
   background-size: cover;
   background-position: 50%;
@@ -35,7 +41,19 @@ const scrollToNext = () => {
   align-items: center;
 }
 
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
 .container {
+  position: relative;
+  z-index: 1;
   margin-left: auto;
   margin-right: auto;
   width: 100%;

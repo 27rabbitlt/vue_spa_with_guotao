@@ -2,6 +2,9 @@
   <nav class="navbar" :class="{ 'navbar-hidden': isHidden, 'navbar-fixed': route.path === '/' }">
     <div class="nav-container">
       <ul class="nav-list">
+        <div class="logo" @click="handleLogoClick">
+          <img src="@/assets/logo.svg" alt="Logo">
+        </div>
         <div class=" social">
           <a href="https://www.linkedin.com/company/eride-africa/posts/?feedView=all" target="_blank">
             <img src="@/assets/img/linked-in-icon.png" alt="linkedin">
@@ -16,9 +19,6 @@
             class="external-link">NEWS</a>
         </li>
       </ul>
-      <div class="logo" @click="handleLogoClick">
-        <img src="@/assets/logo.svg" alt="Logo">
-      </div>
     </div>
   </nav>
 </template>
@@ -37,7 +37,7 @@ const navigationStore = useNavigationStore()
 const links_navbar = ref([
   // { name: 'home', text: 'HOME', hash: '#home' },
   { name: 'about', text: 'ABOUT US', hash: '#about' },
-  { name: 'services', text: 'SERVICES', hash: '#services' },
+  { name: 'products', text: 'PRODUCTS', hash: '#products' },
   { name: 'impact', text: 'IMPACT', hash: '#impact' },
   // { name: 'news', text: 'NEWS', hash: '#news' },
   { name: 'team', text: 'TEAM', hash: '#team' },
@@ -48,7 +48,7 @@ const links_navbar = ref([
 const links = ref([
   // { name: 'home', text: 'HOME', hash: '#home' },
   { name: 'about', text: 'ABOUT US', hash: '#about' },
-  { name: 'services', text: 'SERVICES', hash: '#services' },
+  { name: 'products', text: 'PRODUCTS', hash: '#products,' },
   { name: 'impact', text: 'IMPACT', hash: '#impact' },
   { name: 'project', hash: '#project' },
   { name: 'team', text: 'TEAM', hash: '#team' },

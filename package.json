@@ -15,6 +15,7 @@
     "@wangeditor/editor-for-vue": "^5.1.12",
     "dompurify": "^3.2.5",
     "element-plus": "^2.9.10",
+    "emailjs-com": "^3.2.0",
     "html-truncate": "^1.2.2",
     "pinia": "^3.0.1",
     "serve": "^14.2.4",

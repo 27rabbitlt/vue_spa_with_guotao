@@ -1,5 +1,5 @@
 <template>
-  <section id="services" class="services-section">
+  <section id="products" class="services-section">
     <div class="container">
       <div class="services-container">
         <div class="services-heading wow animate__animated animate__fadeInUp" data-wow-duration="1s">
