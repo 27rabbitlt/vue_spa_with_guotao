@@ -9,7 +9,7 @@
           <TopBoardMember :avatar="jacob" name="Jacob Anz" role="Founder & CTO"
             linkedin="https://www.linkedin.com/in/jacob-anz-68a67b86/?originalSubdomain=ch"
             bio="Jacob is an entrepreneur and remarkable engineer. He is the founder and lead engineer of E-Ride" />
-          <TopBoardMember :avatar="gregNau" name="Greg Nau" role="Co-Founder & CFO"
+          <!-- <TopBoardMember :avatar="gregNau" name="Greg Nau" role="Co-Founder & CFO"
             linkedin="https://www.linkedin.com/in/rightnau/"
             bio="Gregor is a driven business and finance expert. After pursuing an MBA at the IE Business School in Madrid, he worked as a partner at a boutique auditing and international tax advisory, before deciding to found MPower. Gregor has expertise in finance, accounting & tax, Latin America." />
           <TopBoardMember :avatar="me" name="Michael Eschmann" role="Co-Founder & COO"
@@ -17,13 +17,13 @@
             bio="Michael is a dedicated professional with a passion for impact investing. Also a Johns Hopkins SAIS alumni, he worked for different NGOs and international organizations (FS-UNEP, CAF, Perspectives) before joining MPower. Michael is an expert in sustainable finance, business development, fundraising and Africa." />
           <TopBoardMember :avatar="aj" name="Alejandro Jimenez" role="CTO"
             linkedin="https://www.linkedin.com/in/alejojimenezms/"
-            bio="Alejandro is a serial entrepreneur. After completing his degree in Computer Science at the Universidad Militar Nueva Grenada (Colombia) and participating at Y Combinator, he co-founded multiple app-based or educational video games related start-ups. Alejandro is an expert in IT and Software Development." />
+            bio="Alejandro is a serial entrepreneur. After completing his degree in Computer Science at the Universidad Militar Nueva Grenada (Colombia) and participating at Y Combinator, he co-founded multiple app-based or educational video games related start-ups. Alejandro is an expert in IT and Software Development." /> -->
         </div>
-        <div class="management-team-container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+        <!-- <div class="management-team-container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
           <h2 class="title management-team-title text-primary text-4xl font-bold">Management Team</h2>
-          <div class="team-members-grid">
-            <TeamMember :avatar="carolineNdum" name="Caroline Ndum" role="Finance Director, Cameroon" />
-            <TeamMember :avatar="fionaVohryzka" name="Fiona Vohryzka" role="Country Manager, Togo" />
+          <div class="team-members-grid"> -->
+        <!-- <TeamMember :avatar="carolineNdum" name="Caroline Ndum" role="Finance Director, Cameroon" /> -->
+        <!-- <TeamMember :avatar="fionaVohryzka" name="Fiona Vohryzka" role="Country Manager, Togo" />
             <TeamMember :avatar="floraCamille" name="Flora Camille KEUGNE" role="Head of HR, Cameroon" />
             <TeamMember :avatar="jamesMacho" name="James Macho" role="Deputy Country Manager, Zambia" />
             <TeamMember :avatar="johannesHertlein" name="Johannes Hertlein" role="Country Manager, Zambia" />
@@ -33,17 +33,17 @@
             <TeamMember :avatar="ravecousMoonga" name="Ravecous Moonga" role="Head of Sales, Zambia" />
             <TeamMember :avatar="robertBitjong" name="Robert Bitjong" role="Country Manager, Cameroon" />
             <TeamMember :avatar="samuelBoateng" name="Samuel K. Boateng" role="Country Manager, Ghana" />
-            <TeamMember :avatar="zofeChow" name="Zofe Chow" role="Head of Sourcing, China" />
-          </div>
-        </div>
+            <TeamMember :avatar="zofeChow" name="Zofe Chow" role="Head of Sourcing, China" /> -->
+        <!-- </div>
+        </div> -->
         <div class="board-members-container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-          <h2 class="title board-members-title text-primary text-4xl font-bold">Board of Directors</h2>
+          <h2 class="title board-members-title text-primary text-4xl font-bold">Meet Our Alumnus</h2>
           <div class="board-members-grid">
-            <TeamMember :avatar="renatHeuberger" name="Renat Heuberger" role="Chairman of the Board" />
-            <TeamMember :avatar="christianJaag" name="Christian Jaag" role="Board member" />
+            <!-- <TeamMember :avatar="renatHeuberger" name="Renat Heuberger" role="Chairman of the Board" /> -->
+            <!-- <TeamMember :avatar="christianJaag" name="Christian Jaag" role="Board member" />
             <TeamMember :avatar="ladeAraba" name="Ladé Araba" role="Board Member" />
             <TeamMember :avatar="pattyKaruaihe" name="Patty Karuaihe-Martin" role="Board Member" />
-            <TeamMember :avatar="zebaAhmad" name="Zeba Ahmad" role="Board member" />
+            <TeamMember :avatar="zebaAhmad" name="Zeba Ahmad" role="Board member" /> -->
           </div>
         </div>
       </div>

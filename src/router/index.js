@@ -11,6 +11,7 @@ import UserList from '../views/Admin/components/UserList.vue'
 import NewsList from '../views/Admin/components/NewsList.vue'
 import AddNews from '@/views/Admin/components/AddNews.vue'
 import EditNews from '@/views/Admin/components/EditNews.vue'
+import Buy from '@/views/Buy/index.vue'
 
 // const routes = [
 //   {
@@ -45,6 +46,11 @@ const routes = [
     path: '/',
     component: Layout,
     children: [
+      {
+        path: '/buy',
+        name: 'Buy',
+        component: Buy,
+      },
       {
         path: '',
         name: 'Home',

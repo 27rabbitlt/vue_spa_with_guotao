@@ -23,17 +23,25 @@
             </p>
           </div>
         </div>
-        <div class="image-container wow animate__animated animate__fadeInRight" data-wow-duration="1s">
+        <iframe src="https://snapshots.raintank.io/dashboard/snapshot/PZaM1V1T96LrUNB8sU3iQ5zbXTLqjNaz?orgId=0"
+          width="1500" height="600" frameborder="0"></iframe>
+        <!-- <div class="image-container wow animate__animated animate__fadeInRight" data-wow-duration="1s">
           <img src="@/assets/img/dashboard_deb.png" alt="Software Automation">
-        </div>
+        </div> -->
       </div>
       <div class="flex flex-col gap-12 py-8">
         <div v-for="(item, index) in contentItems" :key="index" :class="{
           'flex-row': index % 2 === 0,
           'flex-row-reverse': index % 2 !== 0,
-        }" class="flex items-center gap-8 w-full max-w-4xl mx-auto p-4 bg-gray-50 rounded-lg shadow-md">
-          <div class="w-1/2 flex-shrink-0">
+        }"
+          class="flex items-center justify-between gap-8 w-full max-w-4xl mx-auto p-4 bg-gray-50 rounded-lg shadow-md">
+          <!-- <div class="w-1/2 flex-shrink-0">
             <img :src="item.image" :alt="item.title" class="w-full h-64 object-contain rounded-lg" />
+          </div> -->
+
+          <div class="data-item">
+            <div class="data-label">{{ item.datatitle }}</div>
+            <div class="data-value">{{ item.datavalue }}</div>
           </div>
 
           <div class="w-1/2 p-4">
@@ -58,21 +66,29 @@ import image4 from '@/assets/img/dashboard_deb.png';
 const contentItems = ref([
   {
     image: image1,
+    datatitle: 'Distance Traveled (km)',
+    datavalue: '203',
     title: 'GPS location anytime',
     description: 'GPS location are recorded and visualized on dashboard with different colors for different trips',
   },
   {
     image: image2,
+    datatitle: 'Money Saved (ZMW)',
+    datavalue: '505',
     title: 'How much have we saved?',
     description: 'Monitoring of mileage and CO2 emissions saved through regular automated reports',
   },
   {
     image: image3,
+    datatitle: 'CO2 Saved (kg)',
+    datavalue: '60.8',
     title: 'Multiple metrics',
     description: 'State of charge, state of health, Speed, Range, distance and track, battery temperature and more',
   },
   {
     image: image4,
+    datatitle: 'Number of Trips Completed',
+    datavalue: '33',
     title: 'Customizable',
     description: 'Completely customizable towards the need of B2B clients and fleet managers',
   },
@@ -140,5 +156,35 @@ const contentItems = ref([
   img {
     height: 50vh;
   }
+}
+
+.data-item {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 50px;
+  border-color: black;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.data-item:hover {
+  transform: translateY(-5px);
+}
+
+/* 标签样式 */
+.data-label {
+  font-size: 25px;
+  color: #6c757d;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* 数值样式 */
+.data-value {
+  font-size: 40px;
+  color: #10c249;
+  font-weight: 700;
 }
 </style>

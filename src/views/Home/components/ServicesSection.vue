@@ -15,10 +15,14 @@
               Our in-house developed monitoring solution allows you to fully control your vehicles and battery packs.
               Completely customizable towards the need of B2B clients and fleet managers.
             </p>
-            <a href="https://eride.africa" class="btn-primary wow animate__animated animate__fadeInUp"
+            <!-- <a href="https://eride.africa" class="btn-primary wow animate__animated animate__fadeInUp"
               data-wow-duration="1s" target="_blank">
               <span>PRODUCT PORTFOLIO</span>
-            </a>
+            </a> -->
+            <router-link to="/buy" class="btn-primary wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+              target="_blank">
+              <span>PRODUCT PORTFOLIO</span>
+            </router-link>
           </div>
         </div>
         <!-- <div class="services-items-grid">
