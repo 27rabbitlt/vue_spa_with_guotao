@@ -7,11 +7,10 @@
     </video>
     <div class="container">
       <div class="hero-headings wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-        <h1 class="title pl-20 pr-20 text-white font-bold text-7xl text-shadow-md text-center" data-wow-offset="1">
+        <!-- <h1 class="title pl-20 pr-20 text-white font-bold text-7xl text-shadow-md text-center" data-wow-offset="1">
           Powering Zambia’s Green Future </h1>
-        <h2 class="pl-20 pr-20 text-white text-3xl text-shadow-md text-center">We delivers affordable,
-          reliable electric mobility solutions, reduce
-          costs and cut carbon. Join us in driving sustainable change.</h2>
+        <h2 class="pl-20 pr-20 text-white text-3xl text-shadow-md text-center">Powering Africa's Green Mobility Future
+        </h2> -->
       </div>
       <div class="arrow-down" @click="scrollToNext">
         <img src="@/assets/img/arrow-down.svg" alt="Scroll down" class="animate-bounce cursor-pointer">

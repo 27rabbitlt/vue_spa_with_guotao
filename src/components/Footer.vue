@@ -21,10 +21,16 @@
         </div> -->
         <div class="info-container flex">
           <h4 class="text-secondary title text-gray-400 text-lg font-bold uppercase mb-4">Eride Zambia</h4>
-          <div class="address-container text-white text-sm flex flex-col gap-2">
+          <div class="address-container text-white text-sm flex flex-col gap-2 mb-6">
             <span>11878 Off Kasangula Road</span>
             <span>Olympia Lusaka</span>
             <span>Zambia</span>
+          </div>
+          <h4 class="text-secondary title text-gray-400 text-lg font-bold uppercase mb-4">Eride Europe</h4>
+          <div class="address-container text-white text-sm flex flex-col gap-2">
+            <span>Neue Hard 12, 8005</span>
+            <span>Zürich</span>
+            <span>Switzerland</span>
           </div>
         </div>
 

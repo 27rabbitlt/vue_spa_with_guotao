@@ -2,15 +2,21 @@
   <div>
     <!-- <HeroScroll /> -->
     <HomeSection />
+    <Countdown showDays="false" showLabels="false" />
+    <!-- <FlipClock /> -->
+    <FlipClock :target="new Date('2025-12-31T23:59:59')" :onEnd="onCountdownEnd" />
     <AboutSection />
+    <PhotoGallarSection />
+    <VideoSection />
     <!-- <ModelShowcase /> -->
     <ServicesSection />
     <ProjectSection />
-    <FinanceSection />
-    <ImpactSection />
+    <!-- <FinanceSection /> -->
+    <!-- <ImpactSection /> -->
     <!-- <LearnmoreSection /> -->
     <!-- <GreenFactSection /> -->
     <TeamSection />
+    <PartnerSection />
     <LocationSection />
     <ContactSection />
     <!-- <PartnerSection /> -->
@@ -37,6 +43,13 @@ import HeroScroll from './components/HeroScroll.vue'
 import { onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import ModelShowcase from './components/ModelShowcase.vue'
+import PhotoGallarSection from './components/PhotoGallarSection.vue'
+import VideoSection from './components/VideoSection.vue'
+// import FlipClock from './components/FlipClock.vue'
+import { Countdown } from 'vue3-flip-countdown'
+import { Clock } from 'three'
+import FlipClock from './components/FlipClock.vue'
+
 
 const route = useRoute()
 
@@ -45,18 +58,6 @@ onMounted(() => {
     new WOW().init()
   }
   const rawHash = window.location.hash // 比如 "#/impact"
-  // console.log('rawHash:', rawHash)
-  // console.log('route: ', route)
-  // console.log('route.hash', route.hash)
-  // if (route.hash) {
-  //   // 等待 DOM 渲染完成再滚动
-  //   setTimeout(() => {
-  //     const el = document.querySelector(route.hash)
-  //     if (el) {
-  //       el.scrollIntoView({ behavior: 'smooth' })
-  //     }
-  //   }, 300)
-  // }
 })
 </script>
 

@@ -19,6 +19,9 @@
             class="external-link">NEWS</a>
         </li>
       </ul>
+      <div class="contact-button">
+        <button @click="scrollToContact">CONTACT</button>
+      </div>
     </div>
   </nav>
 </template>
@@ -37,18 +40,18 @@ const navigationStore = useNavigationStore()
 const links_navbar = ref([
   // { name: 'home', text: 'HOME', hash: '#home' },
   { name: 'about', text: 'ABOUT US', hash: '#about' },
-  { name: 'products', text: 'PRODUCTS', hash: '#products' },
-  { name: 'impact', text: 'IMPACT', hash: '#impact' },
+  { name: 'products', text: 'PORTFOLIO', hash: '#products' },
+  // { name: 'impact', text: 'IMPACT', hash: '#impact' },
   // { name: 'news', text: 'NEWS', hash: '#news' },
   { name: 'team', text: 'TEAM', hash: '#team' },
-  { name: 'contact', text: 'CONTACT', hash: '#contact' }
+  // { name: 'contact', text: 'CONTACT', hash: '#contact' }
 ]);
 
 // Configure links overall
 const links = ref([
   // { name: 'home', text: 'HOME', hash: '#home' },
   { name: 'about', text: 'ABOUT US', hash: '#about' },
-  { name: 'products', text: 'PRODUCTS', hash: '#products,' },
+  { name: 'products', text: 'PRODUCTS', hash: '#products' },
   { name: 'impact', text: 'IMPACT', hash: '#impact' },
   { name: 'project', hash: '#project' },
   { name: 'team', text: 'TEAM', hash: '#team' },
@@ -189,7 +192,20 @@ const handleNavigation = (link) => {
 
   navigationStore.navigate(link)
 
-  // 1秒后重置导航状态
+  // reset status after 1 sec
+  setTimeout(() => {
+    isNavigating.value = false
+    lastScrollY.value = window.scrollY
+  }, 1000)
+}
+
+const scrollToContact = () => {
+  isNavigating.value = true
+  const el = document.querySelector('#contact')
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' })
+  }
+  // reset status after 1 sec
   setTimeout(() => {
     isNavigating.value = false
     lastScrollY.value = window.scrollY
@@ -315,5 +331,21 @@ onUnmounted(() => {
     width: 18px;
     height: 18px;
   }
+}
+
+.contact-button button {
+  padding: 10px 20px;
+  background-color: white;
+  color: #09213b;
+  font-weight: bold;
+  border: 2px solid #57606a;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact-button button:hover {
+  background-color: #5e7a98;
+  color: white;
 }
 </style>

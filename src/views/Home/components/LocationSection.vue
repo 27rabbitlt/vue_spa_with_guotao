@@ -15,7 +15,7 @@
               <!-- <img src="@/assets/img/new-window.svg" loading="lazy" alt="" class="new-window-icon" /> -->
             </div>
           </a>
-          <div class="md:w-1/2 bg-white p-8 shadow-xl border-t-4 border-blue-600">
+          <div class="md:w-1/2 bg-white p-8 shadow-xl border-t-4 border-gray-600">
             <form @submit.prevent="handleSubmit" class="space-y-6">
               <div>
                 <label for="name" class="block text-sm font-bold text-gray-700 uppercase tracking-wider">Full
@@ -57,7 +57,7 @@
 
               <div>
                 <button type="submit"
-                  class="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold uppercase tracking-wider transition-colors duration-200">
+                  class="w-full px-6 py-3 bg-gray-400 hover:bg-gray-800 text-white font-bold uppercase tracking-wider transition-colors duration-200">
                   <span v-if="!isSubmitting">SEND MESSAGE</span>
                   <span v-else class="flex items-center justify-center gap-2">
                     <svg class="animate-spin h-5 w-5 text-white" viewBox="0 0 24 24">
