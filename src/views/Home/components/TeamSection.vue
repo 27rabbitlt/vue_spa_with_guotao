@@ -6,18 +6,25 @@
           <h2 class="title team-title text-primary text-7xl font-bold">Meet our Team</h2>
         </div>
         <div class="top-board-container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+          <TopBoardMember :avatar="placeholderAvatar" name="Camilla" role="Team Member"
+            bio="Camilla brings her experience in operations and team management to our organization." />
+          <TopBoardMember :avatar="placeholderAvatar" name="Cephas" role="Team Member"
+            bio="Cephas contributes his expertise in business development and strategic planning." />
+          <TopBoardMember :avatar="placeholderAvatar" name="Dillon" role="Team Member"
+            bio="Dillon is a dedicated team member with expertise in sustainable development and community engagement." />
           <TopBoardMember :avatar="jacob" name="Jacob Anz" role="Founder & CTO"
             linkedin="https://www.linkedin.com/in/jacob-anz-68a67b86/?originalSubdomain=ch"
             bio="Jacob is an entrepreneur and remarkable engineer. He is the founder and lead engineer of E-Ride" />
-          <!-- <TopBoardMember :avatar="gregNau" name="Greg Nau" role="Co-Founder & CFO"
-            linkedin="https://www.linkedin.com/in/rightnau/"
-            bio="Gregor is a driven business and finance expert. After pursuing an MBA at the IE Business School in Madrid, he worked as a partner at a boutique auditing and international tax advisory, before deciding to found MPower. Gregor has expertise in finance, accounting & tax, Latin America." />
-          <TopBoardMember :avatar="me" name="Michael Eschmann" role="Co-Founder & COO"
-            linkedin="https://www.linkedin.com/in/michael-eschmann-0a335942/"
-            bio="Michael is a dedicated professional with a passion for impact investing. Also a Johns Hopkins SAIS alumni, he worked for different NGOs and international organizations (FS-UNEP, CAF, Perspectives) before joining MPower. Michael is an expert in sustainable finance, business development, fundraising and Africa." />
-          <TopBoardMember :avatar="aj" name="Alejandro Jimenez" role="CTO"
-            linkedin="https://www.linkedin.com/in/alejojimenezms/"
-            bio="Alejandro is a serial entrepreneur. After completing his degree in Computer Science at the Universidad Militar Nueva Grenada (Colombia) and participating at Y Combinator, he co-founded multiple app-based or educational video games related start-ups. Alejandro is an expert in IT and Software Development." /> -->
+          <TopBoardMember :avatar="placeholderAvatar" name="Marius" role="Team Member"
+            bio="Marius is dedicated to advancing sustainable mobility solutions." />
+          <TopBoardMember :avatar="placeholderAvatar" name="Mumbi" role="Team Member"
+            bio="Mumbi is passionate about creating positive impact in local communities." />
+          <TopBoardMember :avatar="placeholderAvatar" name="Phynious" role="Team Member"
+            bio="Phynious contributes his technical expertise and innovative thinking to our projects." />
+          <TopBoardMember :avatar="placeholderAvatar" name="Precious" role="Team Member"
+            bio="Precious is committed to driving positive change through sustainable initiatives." />
+          <TopBoardMember :avatar="placeholderAvatar" name="Teng" role="Team Member"
+            bio="Teng brings valuable experience in technology and innovation to our team." />
         </div>
         <!-- <div class="management-team-container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
           <h2 class="title management-team-title text-primary text-4xl font-bold">Management Team</h2>
@@ -36,16 +43,7 @@
             <TeamMember :avatar="zofeChow" name="Zofe Chow" role="Head of Sourcing, China" /> -->
         <!-- </div>
         </div> -->
-        <div class="board-members-container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
-          <h2 class="title board-members-title text-primary text-4xl font-bold">Meet Our Alumnus</h2>
-          <div class="board-members-grid">
-            <!-- <TeamMember :avatar="renatHeuberger" name="Renat Heuberger" role="Chairman of the Board" /> -->
-            <!-- <TeamMember :avatar="christianJaag" name="Christian Jaag" role="Board member" />
-            <TeamMember :avatar="ladeAraba" name="Ladé Araba" role="Board Member" />
-            <TeamMember :avatar="pattyKaruaihe" name="Patty Karuaihe-Martin" role="Board Member" />
-            <TeamMember :avatar="zebaAhmad" name="Zeba Ahmad" role="Board member" /> -->
-          </div>
-        </div>
+        
       </div>
     </div>
   </section>
@@ -61,6 +59,9 @@ import manuelSeiffe from '@/assets/img/team/Manuel-Seiffe.png'
 import gregNau from '@/assets/img/team/Greg-Nau.png'
 import me from '@/assets/img/team/Michael-Eschmann.png'
 import aj from '@/assets/img/team/Alejandro-Jimenez.png'
+
+// Placeholder avatar for new team members
+const placeholderAvatar = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjVGNUY1Ii8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjgwIiByPSIzMCIgZmlsbD0iI0NDQ0NDQyIvPgo8cmVjdCB4PSI2MCIgeT0iMTIwIiB3aWR0aD0iODAiIGhlaWdodD0iNjAiIHJ4PSIxMCIgZmlsbD0iI0NDQ0NDQyIvPgo8L3N2Zz4K'
 
 // Management Team
 import carolineNdum from '@/assets/img/team/Caroline-Ndum.png'
@@ -109,6 +110,7 @@ import zebaAhmad from '@/assets/img/team/Zeba-Ahmad.png'
   gap: 15px;
   margin: 0 auto;
   width: 100%;
+  max-width: 1000px;
   margin-bottom: 40px;
 }
 

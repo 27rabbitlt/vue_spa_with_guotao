@@ -5,23 +5,32 @@
 
       <div
         class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center justify-items-center">
-        <a v-for="(logo, index) in partnerLogos" :key="index" :href="logo.link" :target="_blank"
+        
+        <!-- Holland Green Tech -->
+        <a href="https://hollandgreentech.com/" target="_blank"
           class="w-40 h-30 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
-          <img :src="logo.src" alt="Partner Logo" class="max-h-full max-w-full object-contain" />
+          <img :src="HGT" alt="Holland Green Tech" class="max-h-full max-w-full object-contain hollandgreentech-logo" />
         </a>
+        
+        <!-- Zemia -->
+        <a href="https://www.zemia.org/" target="_blank"
+          class="w-40 h-30 flex items-center justify-center grayscale hover:grayscale-0 transition duration-300">
+          <img :src="Zemia" alt="Zemia" class="max-h-full max-w-full object-contain" />
+        </a>
+        
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
-import HGT from '@/assets/img/HGT-converted.png'
+import HGT from '@/assets/img/HGT-converted-resized.png'
 import Zemia from '@/assets/img/Zemia-converted.png'
-
-const partnerLogos = [
-  { src: HGT, link: 'https://hollandgreentech.com/' },
-  { src: Zemia, link: 'https://www.zemia.org/' }
-]
 </script>
 
-<style scoped></style>
+<style scoped>
+.hollandgreentech-logo {
+  transform: scale(1.5);
+  transform-origin: center;
+}
+</style>

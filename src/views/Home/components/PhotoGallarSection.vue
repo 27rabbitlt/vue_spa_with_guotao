@@ -10,6 +10,8 @@
                         </div>
                         <div class="card-back">
                             <h3> This is our information</h3>
+                            <p>🚀 Buy now with surprise price!</p>
+                            <button> Contact Us</button>
                         </div>
                     </div>
                 </div>
@@ -104,7 +106,7 @@ const isFlipped = (i) => {
 .card {
     width: 100%;
     height: 100%;
-    transition: 2s;
+    /* transition: 2s; */
 }
 
 .card.flipped {
@@ -115,7 +117,7 @@ const isFlipped = (i) => {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 2s;
+    transition: 1s;
     transform: none;
 }
 
@@ -123,8 +125,10 @@ const isFlipped = (i) => {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 2s;
+    transition: 1s;
     transform: rotateX(180deg);
+    border: 2px solid #674f88;
+    border-radius: 8px;
 }
 
 .card.flipped .card-front {
@@ -144,6 +148,7 @@ const isFlipped = (i) => {
 .card-front img {
     width: 100%;
     height: 100%;
+    border-radius: 8px;
     object-fit: cover;
 }
 

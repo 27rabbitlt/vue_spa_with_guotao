@@ -2,15 +2,17 @@
   <div>
     <!-- <HeroScroll /> -->
     <HomeSection />
-    <Countdown showDays="false" showLabels="false" />
+    <!-- <Countdown showDays="false" showLabels="false" /> -->
     <!-- <FlipClock /> -->
-    <FlipClock :target="new Date('2025-12-31T23:59:59')" :onEnd="onCountdownEnd" />
     <AboutSection />
     <PhotoGallarSection />
     <VideoSection />
+    <UseCaseSection />
     <!-- <ModelShowcase /> -->
-    <ServicesSection />
+    <!-- <ServicesSection /> -->
     <ProjectSection />
+    <LusakaPathSection />
+    <FlipClock />
     <!-- <FinanceSection /> -->
     <!-- <ImpactSection /> -->
     <!-- <LearnmoreSection /> -->
@@ -18,7 +20,7 @@
     <TeamSection />
     <PartnerSection />
     <LocationSection />
-    <ContactSection />
+    <!-- <ContactSection /> -->
     <!-- <PartnerSection /> -->
   </div>
 </template>
@@ -27,6 +29,7 @@
 import { ref } from 'vue'
 import { useScroll } from '@vueuse/core'
 import HomeSection from './components/HomeSection.vue'
+import UseCaseSection from './components/UseCaseSection.vue'
 import AboutSection from './components/AboutSection.vue'
 import ServicesSection from './components/ServicesSection.vue'
 import SoftwareSection from './components/SoftwareSection.vue'
@@ -49,6 +52,7 @@ import VideoSection from './components/VideoSection.vue'
 import { Countdown } from 'vue3-flip-countdown'
 import { Clock } from 'three'
 import FlipClock from './components/FlipClock.vue'
+import LusakaPathSection from './components/LusakaPathSection.vue'
 
 
 const route = useRoute()

@@ -8,13 +8,7 @@
           </a>
         </div>
         <div class="get-in-touch-container flex">
-          <h4 class="text-secondary title text-gray-400 text-lg font-bold uppercase mb-4">Get in touch</h4>
-          <div class="contact-address-container text-sm flex flex-col gap-4">
-            <div class="contact-address-item flex flex-col">
-              <a href="mailto:info@eride.africa" class="text-white" target="_blank"
-                rel="noopener noreferrer">info@eride.africa</a>
-            </div>
-          </div>
+          
         </div>
         <!-- <div class="connect-container flex">
           <h4 class="text-secondary title text-gray-400 text-lg font-bold uppercase mb-4">Connect</h4>

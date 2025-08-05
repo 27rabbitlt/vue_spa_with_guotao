@@ -46,22 +46,24 @@ defineProps({
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  padding: 20px;
+  padding: 15px;
   background: #ffffff;
   transition: all 0.3s ease;
   cursor: pointer;
+  width: 200px;
+  max-width: 100%;
 
   &:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   }
 }
 
 .member-avatar {
   width: 100%;
-  height: 250px;
+  height: 120px;
   overflow: hidden;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 
   .avatar-image {
     width: 100%;
@@ -77,11 +79,13 @@ defineProps({
 
 .member-name {
   margin-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
 .member-role {
   margin-bottom: 1rem;
   color: #666;
+  font-size: 0.875rem;
 }
 
 .linkedin-link {
@@ -94,7 +98,12 @@ defineProps({
   }
 
   .linkedin-icon {
-    width: 15px;
+    width: 12px;
   }
+}
+
+.member-bio {
+  font-size: 0.75rem;
+  line-height: 1.4;
 }
 </style>
