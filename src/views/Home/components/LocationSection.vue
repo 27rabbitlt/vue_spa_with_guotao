@@ -2,13 +2,13 @@
   <section id="location" class="location-section">
     <div class="container">
       <div class="location-container">
-        <div class="location-heading wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+        <div class="location-heading wow " data-wow-duration="1s">
           <h2 class="title text-primary text-7xl font-bold">Our Locations and Contacts</h2>
         </div>
         <div class="flex flex-col md:flex-row gap-12 items-center">
 
           <a href="https://www.google.com/maps/d/u/0/edit?mid=1XMACBHUJ-ILJqxo2TDG7q5rZPAtuVCQ&usp=sharing"
-            target="_blank" class="map-outer wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+            target="_blank" class="map-outer wow " data-wow-duration="1s">
             <img src="@/assets/img/map.jpeg" alt="Our Locations" class="map-placeholder" />
             <div class="map-overlay">
               <span class="text-white text-2xl font-normal mr-4">View on Google Maps</span>

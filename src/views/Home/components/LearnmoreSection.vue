@@ -2,7 +2,7 @@
   <section id="learnmore" class="learnmore-section">
     <div class="container">
       <div class="learnmore-container">
-        <div class="project-heading wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+        <div class="project-heading wow " data-wow-duration="1s">
           <h3 class="title text-primary text-4xl font-bold leading-15">Learn more about Eride!</h3>
           <p class="text-primary text-2xl font-medium leading-10">Learn more about our mission, partnerships, and the
             lasting

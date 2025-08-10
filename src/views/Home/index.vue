@@ -5,18 +5,11 @@
     <!-- <Countdown showDays="false" showLabels="false" /> -->
     <!-- <FlipClock /> -->
     <AboutSection />
-    <PhotoGallarSection />
     <VideoSection />
+    <PortfolioSection />
+    <FleetManageSection />
     <UseCaseSection />
-    <!-- <ModelShowcase /> -->
-    <!-- <ServicesSection /> -->
-    <ProjectSection />
-    <LusakaPathSection />
-    <FlipClock />
-    <!-- <FinanceSection /> -->
-    <!-- <ImpactSection /> -->
-    <!-- <LearnmoreSection /> -->
-    <!-- <GreenFactSection /> -->
+    <TestimonialSection />
     <TeamSection />
     <PartnerSection />
     <LocationSection />
@@ -35,7 +28,8 @@ import ServicesSection from './components/ServicesSection.vue'
 import SoftwareSection from './components/SoftwareSection.vue'
 import FinanceSection from './components/FinanceSection.vue'
 import ImpactSection from './components/ImpactSection.vue'
-import ProjectSection from './components/ProjectSection.vue'
+import FleetManageSection from './components/FleetManageSection.vue'
+import TestimonialSection from './components/TestimonialSection.vue'
 import LearnmoreSection from './components/LearnmoreSection.vue'
 import GreenFactSection from './components/GreenFactSection.vue'
 import TeamSection from './components/TeamSection.vue'
@@ -46,7 +40,7 @@ import HeroScroll from './components/HeroScroll.vue'
 import { onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import ModelShowcase from './components/ModelShowcase.vue'
-import PhotoGallarSection from './components/PhotoGallarSection.vue'
+import PortfolioSection from './components/PortfolioSection.vue'
 import VideoSection from './components/VideoSection.vue'
 // import FlipClock from './components/FlipClock.vue'
 import { Countdown } from 'vue3-flip-countdown'

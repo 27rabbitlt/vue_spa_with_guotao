@@ -2,7 +2,7 @@
   <section id="greenfact" class="greenfact-section">
     <div class="container">
       <div class="greenfact-container">
-        <div class="greenfact-heading wow animate__animated animate__fadeInUp" 
+        <div class="greenfact-heading wow " 
         data-wow-delay="0.5s"
         data-wow-offset="0.1"
         data-wow-duration="1s"
@@ -11,7 +11,7 @@
             corporates, and
             investors to scale projects that remove emissions and transform communities.</p>
         </div>
-        <div class="title numbers-container wow animate__animated animate__fadeInUp" 
+        <div class="title numbers-container wow " 
         data-wow-delay="1s"
         data-wow-offset="0.1"
         data-wow-duration="1s">

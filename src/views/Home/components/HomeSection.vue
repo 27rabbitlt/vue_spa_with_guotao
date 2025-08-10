@@ -6,7 +6,7 @@
       Your browser does not support the video tag.
     </video>
     <div class="container">
-      <div class="hero-headings wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+      <div class="hero-headings wow " data-wow-duration="1s">
         <!-- <h1 class="title pl-20 pr-20 text-white font-bold text-7xl text-shadow-md text-center" data-wow-offset="1">
           Powering Zambia’s Green Future </h1>
         <h2 class="pl-20 pr-20 text-white text-3xl text-shadow-md text-center">Powering Africa's Green Mobility Future

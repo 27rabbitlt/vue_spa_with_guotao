@@ -2,24 +2,24 @@
   <section id="products" class="services-section">
     <div class="container">
       <div class="services-container">
-        <div class="services-heading wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+        <div class="services-heading wow " data-wow-duration="1s">
           <h2 class="text-primary text-7xl font-bold title">Fleet management and IoT monitoring
           </h2>
         </div>
         <div class="services-content-container">
           <div class="services-content">
-            <!-- <h3 class="title text-primary text-3xl font-bold wow animate__animated animate__fadeInUp"
+            <!-- <h3 class="title text-primary text-3xl font-bold wow "
               data-wow-duration="1s">
               Electric Products</h3> -->
-            <p class="text-primary text-3xl font-medium wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+            <p class="text-primary text-3xl font-medium wow " data-wow-duration="1s">
               Our in-house developed monitoring solution allows you to fully control your vehicles and battery packs.
               Completely customizable towards the need of B2B clients and fleet managers.
             </p>
-            <!-- <a href="https://eride.africa" class="btn-primary wow animate__animated animate__fadeInUp"
+            <!-- <a href="https://eride.africa" class="btn-primary wow "
               data-wow-duration="1s" target="_blank">
               <span>PRODUCT PORTFOLIO</span>
             </a> -->
-            <router-link to="/buy" class="btn-primary wow animate__animated animate__fadeInUp" data-wow-duration="1s"
+            <router-link to="/buy" class="btn-primary wow " data-wow-duration="1s"
               target="_blank">
               <span>PRODUCT PORTFOLIO</span>
             </router-link>

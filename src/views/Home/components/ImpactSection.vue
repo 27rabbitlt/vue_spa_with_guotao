@@ -1,6 +1,6 @@
 <template>
   <section id="impact" class="impact-section">
-    <div class="slider-container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+    <div class="slider-container wow " data-wow-duration="1s">
       <div class="slider-nav-arrows">
         <button class="slider-prev" @click="prevSlide">
           <img class="arrow-icon" src="@/assets/img/arrow-left.svg" alt="Previous" />
@@ -23,7 +23,7 @@
 
     <div class="container">
       <div class="impact-container">
-        <div class="centered-content wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+        <div class="centered-content wow " data-wow-duration="1s">
           <a href="#" class="btn-primary" @click.prevent="openVideo">
             <span>Watch video</span>
           </a>

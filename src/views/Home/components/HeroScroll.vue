@@ -7,11 +7,11 @@
 
         <!-- Scroll Sections -->
         <div v-for="(section, index) in sections" :key="index" class="section" :class="{ reverse: index % 2 === 1 }">
-            <div class="text wow animate__animated animate__fadeInLeft">
+            <div class="text wow ">
                 <h2>{{ section.title }}</h2>
                 <p>{{ section.text }}</p>
             </div>
-            <div class="image wow animate__animated animate__fadeInRight">
+            <div class="image wow ">
                 <img :src="section.img" :alt="section.title" />
             </div>
         </div>

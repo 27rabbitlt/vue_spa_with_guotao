@@ -3,7 +3,7 @@
     <div class="container">
       <div class="software-container">
         <div class="details-container">
-          <div class="software-details wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+          <div class="software-details wow " data-wow-duration="1s">
             <h2 class="title heading text-primary text-3xl font-bold">Software Monitoring</h2>
             <div class="rich-text">
               <p class="text-primary text-2xl font-medium leading-8">We have a monitoring dashboards containing all
@@ -16,7 +16,7 @@
               </ul>
             </div>
           </div>
-          <div class="gradient-block wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+          <div class="gradient-block wow " data-wow-duration="1s">
             <h4 class="title text-2xl font-bold">State-of-the-art technology</h4>
             <p class="text-xl font-medium">From our access to energy data and payment behaviour, we
               provide the best products to our customers.

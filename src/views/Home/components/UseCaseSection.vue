@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full flex justify-between items-start p-8 bg-white relative overflow-hidden">
+    <div id="usecase" class="w-full flex justify-between items-start p-8 bg-white relative overflow-hidden">
         <!-- 左边：Rural -->
         <div class="w-1/2 pr-8 mb-8">
             <img :src="ruralImage" alt="Rural IoT" class="rounded shadow mb-8 w-full h-64 object-cover" />

@@ -2,10 +2,10 @@
   <section id="team" class="team-section">
     <div class="container">
       <div class="team-container">
-        <div class="team-heading wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+        <div class="team-heading wow " data-wow-duration="1s">
           <h2 class="title team-title text-primary text-7xl font-bold">Meet our Team</h2>
         </div>
-        <div class="top-board-container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+        <div class="top-board-container wow " data-wow-duration="1s">
           <TopBoardMember :avatar="placeholderAvatar" name="Camilla" role="Team Member"
             bio="Camilla brings her experience in operations and team management to our organization." />
           <TopBoardMember :avatar="placeholderAvatar" name="Cephas" role="Team Member"
@@ -21,12 +21,10 @@
             bio="Mumbi is passionate about creating positive impact in local communities." />
           <TopBoardMember :avatar="placeholderAvatar" name="Phynious" role="Team Member"
             bio="Phynious contributes his technical expertise and innovative thinking to our projects." />
-          <TopBoardMember :avatar="placeholderAvatar" name="Precious" role="Team Member"
-            bio="Precious is committed to driving positive change through sustainable initiatives." />
           <TopBoardMember :avatar="placeholderAvatar" name="Teng" role="Team Member"
             bio="Teng brings valuable experience in technology and innovation to our team." />
         </div>
-        <!-- <div class="management-team-container wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+        <!-- <div class="management-team-container wow " data-wow-duration="1s">
           <h2 class="title management-team-title text-primary text-4xl font-bold">Management Team</h2>
           <div class="team-members-grid"> -->
         <!-- <TeamMember :avatar="carolineNdum" name="Caroline Ndum" role="Finance Director, Cameroon" /> -->

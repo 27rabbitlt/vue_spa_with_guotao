@@ -1,5 +1,5 @@
 <template>
-  <div class="services-item wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+  <div class="services-item wow " data-wow-duration="1s">
     <h3 class="title item-title text-primary text-lg">{{ title }}</h3>
     <div class="image-container">
       <img :src="img" :alt="title" class="item-image">

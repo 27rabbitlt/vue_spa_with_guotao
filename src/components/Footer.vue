@@ -20,6 +20,8 @@
             <span>Olympia Lusaka</span>
             <span>Zambia</span>
           </div>
+        </div>
+        <div class="info-container flex">
           <h4 class="text-secondary title text-gray-400 text-lg font-bold uppercase mb-4">Eride Europe</h4>
           <div class="address-container text-white text-sm flex flex-col gap-2">
             <span>Neue Hard 12, 8005</span>
