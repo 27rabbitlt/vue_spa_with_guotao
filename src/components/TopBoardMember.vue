@@ -9,7 +9,6 @@
       <a v-if="linkedin" :href="linkedin" target="_blank" class="linkedin-link">
         <img src="@/assets/img/blue-linkedin.svg" alt="LinkedIn" class="linkedin-icon" />
       </a>
-      <p class="member-bio text-primary text-base font-medium">{{ bio }}</p>
     </div>
   </div>
 </template>
@@ -31,10 +30,6 @@ defineProps({
   linkedin: {
     type: String,
     default: ''
-  },
-  bio: {
-    type: String,
-    required: true
   }
 })
 </script>
@@ -61,9 +56,10 @@ defineProps({
 
 .member-avatar {
   width: 100%;
-  height: 120px;
+  height: 200px;
   overflow: hidden;
   margin-bottom: 1rem;
+  border-radius: 8px;
 
   .avatar-image {
     width: 100%;
@@ -100,10 +96,5 @@ defineProps({
   .linkedin-icon {
     width: 12px;
   }
-}
-
-.member-bio {
-  font-size: 0.75rem;
-  line-height: 1.4;
 }
 </style>

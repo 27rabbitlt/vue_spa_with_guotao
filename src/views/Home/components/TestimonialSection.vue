@@ -8,23 +8,18 @@
                 <!-- First Testimonial - Avatar on Left -->
                 <div class="testimonial-item testimonial-left">
                     <div class="avatar-container">
-                        <div class="avatar">
-                            <svg viewBox="0 0 100 100" class="default-avatar">
-                                <circle cx="50" cy="35" r="20" fill="#e5e7eb"/>
-                                <circle cx="50" cy="100" r="45" fill="#e5e7eb"/>
-                            </svg>
-                        </div>
+                        <img :src="karenTapulaImage" alt="Karen Tapula" class="avatar-image" />
                     </div>
                     <div class="testimonial-content">
                         <div class="quote-icon">"</div>
                         <p class="testimonial-text">
-                            The ebike has completely transformed my daily commute. It's not just eco-friendly, 
-                            but also incredibly fun to ride. The battery life exceeds my expectations, and 
-                            the smooth electric assist makes hills feel like flat roads. Highly recommended!
+                            I have had my bike for over a year now and I must say that it has been one of the best choices I've ever made. It's smooth on the road and the battery is both durable and reliable. Maintenance is very minimal. I only fixed my indicator and brakes once.
+                            With all the traffic in Lusaka.It helps me move much faster and I don't spend on fuel at all. It's very convenient and cost effective. I am very happy with it.
+
                         </p>
                         <div class="customer-info">
-                            <h4 class="customer-name">Sarah Johnson</h4>
-                            <p class="customer-title">Daily Commuter</p>
+                            <h4 class="customer-name">Karen Tapula</h4>
+                            <p class="customer-title">Personal Customers</p>
                         </div>
                     </div>
                 </div>
@@ -34,23 +29,18 @@
                     <div class="testimonial-content">
                         <div class="quote-icon">"</div>
                         <p class="testimonial-text">
-                            As a delivery driver, I needed something reliable and efficient. This ebike 
-                            has been a game-changer for my business. The cargo capacity is impressive, 
-                            and the electric motor helps me cover more ground without getting exhausted. 
-                            It's paid for itself in just a few months!
+                            Last year, Holland Greentech purchased 8 electric bikes from E-Ride to support our sales agents in rural Zambia. After a year, we’re very glad with our choice. The bikes and their batteries have proven reliable, with enough range to reach even remote farmers, carrying a spare battery doubles the distance.
+                            Compared to petrol bikes, we’ve eliminated fuel misuse, tedious receipt tracking, and cut costs. The in-built GPS also gives us clear oversight of bike usage and agent movements.
+                            The future is electric!
+
                         </p>
                         <div class="customer-info">
-                            <h4 class="customer-name">Michael Chen</h4>
-                            <p class="customer-title">Delivery Professional</p>
+                            <h4 class="customer-name">Bram de Vries</h4>
+                            <p class="customer-title">Holland Greentech Consultant</p>
                         </div>
                     </div>
                     <div class="avatar-container">
-                        <div class="avatar">
-                            <svg viewBox="0 0 100 100" class="default-avatar">
-                                <circle cx="50" cy="35" r="20" fill="#d1d5db"/>
-                                <circle cx="50" cy="100" r="45" fill="#d1d5db"/>
-                            </svg>
-                        </div>
+                        <img :src="bramImage" alt="Bram de Vries" class="avatar-image" />
                     </div>
                 </div>
             </div>
@@ -59,7 +49,8 @@
 </template>
 
 <script setup>
-// No additional logic needed for this static component
+import karenTapulaImage from '@/assets/img/karen_tapula.jpg'
+import bramImage from '@/assets/img/bram.jpg'
 </script>
 
 <style scoped>
@@ -134,6 +125,14 @@
     border: 4px solid #e2e8f0;
 }
 
+.avatar-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #e2e8f0;
+}
+
 .default-avatar {
     width: 60px;
     height: 60px;
@@ -199,6 +198,11 @@
     .avatar {
         width: 60px;
         height: 60px;
+    }
+    
+    .avatar-image {
+        width: 120px;
+        height: 120px;
     }
     
     .default-avatar {

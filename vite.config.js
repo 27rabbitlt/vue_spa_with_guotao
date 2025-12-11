@@ -15,7 +15,8 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 const repoName = 'vue_spa_with_guotao'
 
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? `/${repoName}/` : '/',
+  // base: process.env.NODE_ENV === 'production' ? `/${repoName}/` : '/',
+  base: '/',
   plugins: [
     vue(),
     vueDevTools(),

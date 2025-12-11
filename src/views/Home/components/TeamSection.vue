@@ -3,27 +3,40 @@
     <div class="container">
       <div class="team-container">
         <div class="team-heading wow " data-wow-duration="1s">
-          <h2 class="title team-title text-primary text-7xl font-bold">Meet our Team</h2>
+          <div class="heading-with-button">
+            <h2 class="title team-title text-primary text-7xl font-bold">Meet our Team</h2>
+            <button @click="toggleExpand" class="toggle-button">
+              <svg v-if="isExpanded" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="18 15 12 9 6 15"></polyline>
+              </svg>
+              <svg v-else class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+          </div>
         </div>
-        <div class="top-board-container wow " data-wow-duration="1s">
-          <TopBoardMember :avatar="placeholderAvatar" name="Camilla" role="Team Member"
-            bio="Camilla brings her experience in operations and team management to our organization." />
-          <TopBoardMember :avatar="placeholderAvatar" name="Cephas" role="Team Member"
-            bio="Cephas contributes his expertise in business development and strategic planning." />
-          <TopBoardMember :avatar="placeholderAvatar" name="Dillon" role="Team Member"
-            bio="Dillon is a dedicated team member with expertise in sustainable development and community engagement." />
+        <transition name="slide-fade">
+          <div v-show="isExpanded" class="top-board-container wow " data-wow-duration="1s">
+          <TopBoardMember :avatar="camilla" name="Camilla" role="Team Member"
+            linkedin="https://www.linkedin.com/in/camilla-chipili/" />
+          <TopBoardMember :avatar="chipo" name="Chipo" role="Team Member"
+            linkedin="https://www.linkedin.com/in/chipo-chilengwe-a273b6287/?originalSubdomain=zm" />
+          <TopBoardMember :avatar="dillon" name="Dillon" role="Team Member"
+            linkedin="https://ch.linkedin.com/in/dillon-mulcahy" />
           <TopBoardMember :avatar="jacob" name="Jacob Anz" role="Founder & CTO"
-            linkedin="https://www.linkedin.com/in/jacob-anz-68a67b86/?originalSubdomain=ch"
-            bio="Jacob is an entrepreneur and remarkable engineer. He is the founder and lead engineer of E-Ride" />
-          <TopBoardMember :avatar="placeholderAvatar" name="Marius" role="Team Member"
-            bio="Marius is dedicated to advancing sustainable mobility solutions." />
-          <TopBoardMember :avatar="placeholderAvatar" name="Mumbi" role="Team Member"
-            bio="Mumbi is passionate about creating positive impact in local communities." />
-          <TopBoardMember :avatar="placeholderAvatar" name="Phynious" role="Team Member"
-            bio="Phynious contributes his technical expertise and innovative thinking to our projects." />
-          <TopBoardMember :avatar="placeholderAvatar" name="Teng" role="Team Member"
-            bio="Teng brings valuable experience in technology and innovation to our team." />
-        </div>
+            linkedin="https://www.linkedin.com/in/jacob-anz-68a67b86/?originalSubdomain=ch" />
+          <TopBoardMember :avatar="marius" name="Marius" role="Team Member" />
+          <TopBoardMember :avatar="milos" name="Milos" role="Team Member" />
+          <TopBoardMember :avatar="mumbi" name="Mumbi" role="Team Member"
+            linkedin="https://www.linkedin.com/in/mumbi-mukuka-348990144" />
+          <TopBoardMember :avatar="phynious" name="Phynious" role="Team Member"
+            linkedin="https://zm.linkedin.com/in/phynious-chilufya-481349180" />
+          <TopBoardMember :avatar="rodney" name="Rodney" role="Team Member"
+            linkedin="https://www.linkedin.com/in/rodney-b-2b5459142/" />
+          <TopBoardMember :avatar="teng" name="Teng" role="Team Member"
+            linkedin="https://www.linkedin.com/in/teng-liu-03473b223/" />
+          </div>
+        </transition>
         <!-- <div class="management-team-container wow " data-wow-duration="1s">
           <h2 class="title management-team-title text-primary text-4xl font-bold">Management Team</h2>
           <div class="team-members-grid"> -->
@@ -48,39 +61,28 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import TopBoardMember from '@/components/TopBoardMember.vue'
 import TeamMember from '@/components/TeamMember.vue'
 
+// Expand/collapse state
+const isExpanded = ref(false)
+
+const toggleExpand = () => {
+  isExpanded.value = !isExpanded.value
+}
+
 // Top Board Members
-import jacob from '@/assets/img/team/jacob.jpeg'
-import manuelSeiffe from '@/assets/img/team/Manuel-Seiffe.png'
-import gregNau from '@/assets/img/team/Greg-Nau.png'
-import me from '@/assets/img/team/Michael-Eschmann.png'
-import aj from '@/assets/img/team/Alejandro-Jimenez.png'
-
-// Placeholder avatar for new team members
-const placeholderAvatar = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRjVGNUY1Ii8+CjxjaXJjbGUgY3g9IjEwMCIgY3k9IjgwIiByPSIzMCIgZmlsbD0iI0NDQ0NDQyIvPgo8cmVjdCB4PSI2MCIgeT0iMTIwIiB3aWR0aD0iODAiIGhlaWdodD0iNjAiIHJ4PSIxMCIgZmlsbD0iI0NDQ0NDQyIvPgo8L3N2Zz4K'
-
-// Management Team
-import carolineNdum from '@/assets/img/team/Caroline-Ndum.png'
-import fionaVohryzka from '@/assets/img/team/Fiona-Vohryzka.png'
-import floraCamille from '@/assets/img/team/Flora-Camille-KEUGNE.png'
-import jamesMacho from '@/assets/img/team/James-Macho.png'
-import johannesHertlein from '@/assets/img/team/Johannes-Hertlein.png'
-import luizaNovita from '@/assets/img/team/Luiza-Novita.png'
-import paulNemga from '@/assets/img/team/Paul-Nemga.png'
-import paulusFillepus from '@/assets/img/team/Paulus-Fillepus.png'
-import ravecousMoonga from '@/assets/img/team/Ravecous-Moonga.png'
-import robertBitjong from '@/assets/img/team/Robert-Bitjong.png'
-import samuelBoateng from '@/assets/img/team/Samue-K-Boateng.png'
-import zofeChow from '@/assets/img/team/Zofe-Chow.png'
-
-// Board Members
-import renatHeuberger from '@/assets/img/team/Renat-Heuberger.png'
-import christianJaag from '@/assets/img/team/Christian-Jaag.png'
-import ladeAraba from '@/assets/img/team/Lade-Araba.png'
-import pattyKaruaihe from '@/assets/img/team/Patty-Karuaihe-Martin.png'
-import zebaAhmad from '@/assets/img/team/Zeba-Ahmad.png'
+import jacob from '@/assets/img/team/Jacob.png'
+import camilla from '@/assets/img/team/Camilla.jpg'
+import chipo from '@/assets/img/team/Chipo.jpg'
+import dillon from '@/assets/img/team/Dillon.png'
+import marius from '@/assets/img/team/Marius.png'
+import milos from '@/assets/img/team/Milos.png'
+import mumbi from '@/assets/img/team/Mumbi.jpg'
+import phynious from '@/assets/img/team/Phynious.jpg'
+import rodney from '@/assets/img/team/Rodney.jpg'
+import teng from '@/assets/img/team/Teng.png'
 </script>
 
 <style scoped lang="scss">
@@ -98,6 +100,41 @@ import zebaAhmad from '@/assets/img/team/Zeba-Ahmad.png'
 
 .team-heading {
   text-align: center;
+  width: 100%;
+}
+
+.heading-with-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.toggle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #000000;
+
+  &:hover {
+    opacity: 0.7;
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .top-board-container {
@@ -110,6 +147,25 @@ import zebaAhmad from '@/assets/img/team/Zeba-Ahmad.png'
   width: 100%;
   max-width: 1000px;
   margin-bottom: 40px;
+}
+
+// Transition animations
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.3s ease-in;
+}
+
+.slide-fade-enter-from {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.slide-fade-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
 }
 
 .team-members-grid,

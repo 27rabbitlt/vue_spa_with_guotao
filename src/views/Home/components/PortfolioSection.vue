@@ -18,7 +18,7 @@
                                     <img :src="photo">
                                 </div>
                                 <div class="card-back">
-                                    <h3>This is our information</h3>
+                                    <h3>This is our nice prodduct</h3>
                                     <p>🚀 Buy now with surprise price!</p>
                                     <button>Contact Us</button>
                                 </div>
@@ -38,14 +38,25 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 
-import photo1 from '@/assets/img/buy_item_1.jpg'
-import photo2 from '@/assets/img/buy_item_2.jpg'
-import photo3 from '@/assets/img/buy_item_1.jpg'
-import photo4 from '@/assets/img/buy_item_2.jpg'
-import photo5 from '@/assets/img/buy_item_2.jpg'
+import photo1 from '@/assets/img/photo_galary/g1.jpg'
+import photo2 from '@/assets/img/photo_galary/g2.jpg'
+import photo3 from '@/assets/img/photo_galary/g3.jpg'
+import photo4 from '@/assets/img/photo_galary/g4.jpg'
+import photo5 from '@/assets/img/photo_galary/g5.jpg'
+import photo6 from '@/assets/img/photo_galary/g6.jpg'
+import photo7 from '@/assets/img/photo_galary/g7.jpg'
+import photo8 from '@/assets/img/photo_galary/g8.jpg'
+import photo9 from '@/assets/img/photo_galary/g9.jpg'
+import photo10 from '@/assets/img/photo_galary/g10.jpg'
+import photo11 from '@/assets/img/photo_galary/g11.jpg'
+import photo12 from '@/assets/img/photo_galary/g12.jpg'
+import photo13 from '@/assets/img/photo_galary/g13.jpg'
+import photo14 from '@/assets/img/photo_galary/g14.jpg'
+import photo15 from '@/assets/img/photo_galary/g15.jpg'
 
 const photos = [
-    photo1, photo2, photo3, photo4, photo5
+    photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, 
+    photo10, photo11, photo12, photo13, photo14, photo15
 ]
 
 const current = ref(0)
@@ -60,12 +71,10 @@ const translateZ = computed(() => {
 
 const next = () => {
     current.value = (current.value + 1) % photos.length
-    // 不再需要旋转整个3D对象，因为getFaceStyle会根据current.value动态计算
 }
 
 const prev = () => {
     current.value = (current.value - 1 + photos.length) % photos.length
-    // 不再需要旋转整个3D对象，因为getFaceStyle会根据current.value动态计算
 }
 
 const getFaceStyle = (i) => {
@@ -159,6 +168,11 @@ const handleResize = () => {
 
 onMounted(() => {
     window.addEventListener('resize', handleResize)
+    // 预加载所有图片，避免动画时加载导致的卡顿
+    photos.forEach(photo => {
+        const img = new Image()
+        img.src = photo
+    })
 })
 
 onUnmounted(() => {
@@ -228,7 +242,8 @@ onUnmounted(() => {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    transition: all 0.6s ease;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s ease;
+    will-change: transform, opacity;
 }
 
 .card {
@@ -236,15 +251,12 @@ onUnmounted(() => {
     height: 100%;
 }
 
-.card.flipped {
-    /* transform: rotateX(180deg); */
-}
 
 .card-front {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 1s;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     transform: none;
 }
 
@@ -252,7 +264,7 @@ onUnmounted(() => {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 1s;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     transform: rotateY(180deg);
     border: 2px solid #674f88;
     border-radius: 12px;
@@ -283,6 +295,10 @@ onUnmounted(() => {
     height: 100%;
     border-radius: 12px;
     object-fit: cover;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 .card-back h3 {
